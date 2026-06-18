@@ -1,0 +1,1655 @@
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OKAN Music Company — Press Kit 2025–26</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:100vh}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:200;background:rgba(17,16,16,0.97);border-bottom:1px solid rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:space-between;padding:10px 20px;gap:14px;backdrop-filter:blur(16px)}
+.nav-logo{display:flex;align-items:center;gap:10px;font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:3px;color:#f7f7f7;flex-shrink:0;cursor:pointer;text-decoration:none}
+.nav-logo img{height:32px;width:auto;object-fit:contain}
+.nav-logo span{color:#dbf343}
+.logo-img{height:auto;max-width:100%;display:block;object-fit:contain}
+.nav-tabs{display:flex;gap:3px;overflow-x:auto;scrollbar-width:none}
+.nav-tabs::-webkit-scrollbar{display:none}
+.tab{background:transparent;border:1px solid rgba(255,255,255,0.1);color:#777;padding:5px 11px;border-radius:20px;font-size:9px;font-weight:700;cursor:pointer;white-space:nowrap;letter-spacing:1px;text-transform:uppercase;transition:all .15s;font-family:'Inter',sans-serif}
+.tab:hover{border-color:#dbf343;color:#dbf343}
+.tab.active{background:#dbf343;border-color:#dbf343;color:#111010}
+
+/* PANELS */
+.panel{display:none}.panel.active{display:block}
+
+/* ═══════════════════════════════════════
+   PÁGINA PRINCIPAL DEL SELLO
+═══════════════════════════════════════ */
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;background:#111010}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 70% 40%,rgba(104,11,214,0.06) 0%,transparent 60%),radial-gradient(ellipse at 10% 80%,rgba(219,243,67,0.04) 0%,transparent 50%)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.015) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.015) 1px,transparent 1px);background-size:60px 60px}
+.hero-content{position:relative;z-index:2;padding:0 48px 80px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end}
+.hero-left{display:flex;flex-direction:column;justify-content:flex-end}
+.hero-right{display:flex;align-items:center;justify-content:center}
+.hero-logo{max-width:100%;width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 0 40px rgba(219,243,67,0.08));opacity:0.95;transition:all .4s}
+.hero-logo:hover{opacity:1;filter:drop-shadow(0 0 60px rgba(219,243,67,0.15))}
+.hero-eyebrow{font-size:10px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#dbf343;margin-bottom:28px}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(72px,9vw,140px);line-height:.88;color:#f7f7f7;letter-spacing:-2px;margin-bottom:32px}
+.hero-title em{color:#dbf343;font-style:normal}
+.hero-tagline{font-size:clamp(14px,1.8vw,20px);color:#888;line-height:1.65;max-width:540px;margin-bottom:48px;font-weight:300;text-align:justify}
+.hero-tagline strong{color:#f7f7f7;font-weight:500}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+.btn-primary{background:#dbf343;color:#111010;border:none;padding:14px 32px;font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;cursor:pointer;border-radius:2px;font-family:'Inter',sans-serif;transition:all .2s}
+.btn-primary:hover{background:#e8f95a;transform:translateY(-1px)}
+.btn-secondary{background:transparent;color:#f7f7f7;border:1px solid rgba(255,255,255,0.2);padding:14px 32px;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;cursor:pointer;border-radius:2px;font-family:'Inter',sans-serif;transition:all .2s}
+.btn-secondary:hover{border-color:#dbf343;color:#dbf343}
+.hero-stats{position:relative;z-index:2;border-top:1px solid rgba(255,255,255,0.06);overflow:hidden}
+.stats-track{display:flex;transition:transform .6s cubic-bezier(.4,0,.2,1)}
+.stat-slide{flex:0 0 100%;padding:28px 48px;display:flex;align-items:center;justify-content:center;border-right:1px solid rgba(255,255,255,0.06);box-sizing:border-box}
+.hero-stat{display:flex;align-items:baseline;gap:14px;padding:0}
+.hero-stat-num{font-family:'Bebas Neue',sans-serif;font-size:42px;color:#f7f7f7;line-height:1;white-space:nowrap}
+.hero-stat-num span{color:#dbf343}
+.hero-stat-label{font-size:9px;color:#555;letter-spacing:2px;text-transform:uppercase;margin-top:4px;white-space:nowrap}
+.stats-indicators{display:flex;justify-content:center;gap:8px;padding:12px 0 20px;position:relative;z-index:3}
+.stats-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.08);cursor:pointer;transition:all .3s}
+.stats-dot.active{background:#dbf343;border-color:#dbf343;box-shadow:0 0 8px rgba(219,243,67,.4)}
+@media(min-width:700px){
+  .stat-slide{flex:0 0 50%}
+}
+@media(min-width:1100px){
+  .stat-slide{flex:0 0 25%}
+  .stats-indicators{display:none}
+}
+
+/* MANIFESTO STRIP */
+.manifesto-strip{padding:80px 48px;border-bottom:1px solid rgba(255,255,255,0.06);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.manifesto-label{font-size:9px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#dbf343;margin-bottom:24px}
+.manifesto-text{font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,4vw,56px);line-height:1.05;color:#f7f7f7}
+.manifesto-text em{color:#dbf343;font-style:normal}
+.manifesto-body p{font-size:14px;line-height:1.85;color:#888;margin-bottom:16px;text-align:justify}
+.manifesto-body p strong{color:#f7f7f7;font-weight:500}
+.manifesto-tagline{font-family:'Bebas Neue',sans-serif;font-size:22px;color:#dbf343;margin-top:32px;letter-spacing:.5px}
+
+/* PILLARS */
+.pillars{padding:80px 48px;border-bottom:1px solid rgba(255,255,255,0.06)}
+.section-header{margin-bottom:56px}
+.section-eyebrow{font-size:9px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#dbf343;margin-bottom:16px}
+.section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,5vw,72px);line-height:.9;color:#f7f7f7}
+.pillars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.pillar-card{background:#1a1a1a;border:1px solid rgba(255,255,255,0.05);padding:40px 36px;position:relative;overflow:hidden;transition:border-color .2s}
+.pillar-card:hover{border-color:rgba(104,11,214,.3)}
+.pillar-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:#dbf343;transform:scaleY(0);transform-origin:top;transition:transform .3s}
+.pillar-card:hover::before{transform:scaleY(1)}
+.pillar-num{font-family:'Bebas Neue',sans-serif;font-size:80px;color:rgba(219,243,67,0.05);line-height:1;position:absolute;top:20px;right:24px}
+.pillar-tag{font-size:8px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#dbf343;margin-bottom:16px}
+.pillar-name{font-family:'Bebas Neue',sans-serif;font-size:36px;color:#f7f7f7;line-height:1;margin-bottom:16px}
+.pillar-desc{font-size:13px;line-height:1.75;color:#666;text-align:justify}
+
+/* VALUE PROPS */
+.value-props{padding:80px 48px;border-bottom:1px solid rgba(255,255,255,0.06);background:linear-gradient(180deg,#111010 0%,#161616 100%)}
+.vp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:56px}
+.vp-item{position:relative;overflow:hidden;padding:36px;background:#1a1a1a;border:3px solid rgba(255,255,255,0.05);border-radius:8px;transition:border-color .3s}
+.vp-item:hover{border-color:rgba(219,243,67,.3)}
+.vp-num{font-family:'Bebas Neue',sans-serif;font-size:80px;color:rgba(219,243,67,0.06);line-height:1;margin-bottom:4px;position:absolute;top:20px;right:24px}
+.vp-title{font-family:'Bebas Neue',sans-serif;font-size:26px;color:#f7f7f7;margin-bottom:10px;letter-spacing:.5px}
+.vp-text{font-size:13px;line-height:1.75;color:#666;text-align:justify}
+.vp-text strong{color:#dbf343;font-weight:600}
+
+/* IMPACT / SOCIAL */
+.impact{padding:80px 48px;border-bottom:1px solid rgba(255,255,255,0.06)}
+.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:56px}
+.impact-card{padding:36px;border-top:2px solid #dbf343}
+.impact-num{font-family:'Bebas Neue',sans-serif;font-size:52px;color:#dbf343;line-height:1;margin-bottom:8px}
+.impact-label{font-size:12px;font-weight:600;color:#f7f7f7;margin-bottom:8px;letter-spacing:.5px}
+.impact-desc{font-size:12px;line-height:1.7;color:#555;text-align:justify}
+
+/* ROSTER PREVIEW */
+.roster-section{padding:80px 48px;border-bottom:1px solid rgba(255,255,255,0.06)}
+.roster-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:2px;margin-top:48px}
+
+/* SERVICES */
+.services{padding:80px 48px;border-bottom:1px solid rgba(255,255,255,0.06)}
+.services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:56px}
+.svc-card{background:#1a1a1a;border:1px solid rgba(255,255,255,0.05);padding:36px;transition:border-color .2s}
+.svc-card:hover{border-color:rgba(104,11,214,.3)}
+.svc-tier{font-size:8px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#dbf343;margin-bottom:12px}
+.svc-name{font-family:'Bebas Neue',sans-serif;font-size:30px;color:#f7f7f7;margin-bottom:10px}
+.svc-price{font-size:13px;color:#888;margin-bottom:18px}
+.svc-list{list-style:none}
+.svc-list li{font-size:12px;color:#666;line-height:1.6;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.04);display:flex;gap:10px;text-align:justify}
+.svc-list li::before{content:'→';color:#dbf343;flex-shrink:0}
+
+/* CLOSING CTA */
+.cta-section{padding:120px 48px;text-align:center;background:linear-gradient(160deg,#111010 0%,#141214 100%);position:relative;overflow:hidden}
+.cta-section::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;background:radial-gradient(circle,rgba(104,11,214,0.04) 0%,transparent 70%);pointer-events:none}
+.cta-label{font-size:9px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#dbf343;margin-bottom:24px}
+.cta-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(48px,7vw,100px);line-height:.9;color:#f7f7f7;margin-bottom:24px}
+.cta-sub{font-size:15px;color:#666;max-width:480px;margin:0 auto 48px;line-height:1.7;text-align:justify}
+.cta-contact{font-size:11px;color:#555;margin-top:40px;letter-spacing:1px}
+.cta-contact span{color:#dbf343}
+
+/* FOOTER */
+.footer{padding:40px 48px 80px;border-top:1px solid rgba(255,255,255,0.06);display:flex;justify-content:space-between;align-items:center;gap:16px}
+.footer-brand{font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:3px;color:rgba(247,247,247,.2)}
+.footer-tagline{font-size:11px;color:#444;font-style:italic}
+
+/* ═══════════════════════════════════════
+   PRESS KIT (artistas)
+═══════════════════════════════════════ */
+.home-pk{padding:44px 32px}
+.home-pk-title{font-family:'Bebas Neue',sans-serif;font-size:60px;line-height:.88;margin-bottom:6px;color:#f7f7f7}
+.home-pk-title em{color:#dbf343;font-style:normal}
+.home-pk-sub{font-size:10px;color:#555;letter-spacing:2px;text-transform:uppercase;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,0.05);margin-bottom:32px}
+.roster-pk{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:2px}
+
+/* SHARE LINK */
+.share-section{padding:16px 32px 28px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.share-label{font-size:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#dbf343}
+.share-url-box{display:flex;align-items:center;gap:8px;background:#1a1a1a;border:1px solid rgba(255,255,255,0.1);border-radius:2px;padding:7px 12px;flex:1;min-width:200px}
+.share-url-text{font-size:11px;color:#f7f7f7;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1}
+.share-copy-btn{background:#dbf343;color:#111010;border:none;padding:7px 16px;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;cursor:pointer;border-radius:2px;font-family:'Inter',sans-serif;transition:all .15s;white-space:nowrap}
+.share-copy-btn:hover{background:#e8f95a}
+/* ROSTER CARD */
+.rc{cursor:pointer;background:#1a1a1a;border:1px solid rgba(255,255,255,0.06);overflow:hidden;position:relative;transition:border-color .15s}
+.rc:hover{border-color:rgba(219,243,67,.25)}
+.rc-art{height:440px;position:relative;overflow:hidden}
+.rc-grad{position:absolute;inset:0;background:linear-gradient(to top,rgba(17,16,16,1) 0%,rgba(17,16,16,.4) 50%,transparent 100%)}
+.rc-badge{position:absolute;top:12px;right:12px;font-size:8px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:3px 9px;border-radius:2px;background:#dbf343;color:#111010}
+.rc-body{padding:14px 18px 20px}
+.rc-num{font-family:'Bebas Neue',sans-serif;font-size:10px;letter-spacing:2px;margin-bottom:3px;color:#dbf343}
+.rc-name{font-family:'Bebas Neue',sans-serif;font-size:32px;line-height:1;color:#f7f7f7}
+.rc-alias{font-size:9px;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin:3px 0 10px;color:#680bd6}
+.rc-stats-row{display:flex;gap:14px;flex-wrap:wrap}
+.rc-stat{font-size:10px;color:#555}
+.rc-stat strong{color:#f7f7f7;font-weight:700}
+.rc-arr{position:absolute;bottom:14px;right:14px;font-size:16px;color:rgba(219,243,67,.2);transition:all .15s}
+.rc:hover .rc-arr{color:#dbf343;transform:translate(3px,-3px)}
+
+/* ARTIST PAGE */
+.ahero{display:grid;grid-template-columns:1fr 1fr;min-height:520px;border-bottom:1px solid rgba(255,255,255,0.05)}
+.ahero-left{padding:40px 32px;display:flex;flex-direction:column;justify-content:flex-end}
+.ahero-right{position:relative;overflow:hidden;background-size:contain;background-repeat:no-repeat;background-position:center;background-color:#1a1a1a;transition:background-image .8s ease}
+.hero-dots{display:flex;justify-content:center;gap:8px;padding:10px 0;background:#111010;border-bottom:1px solid rgba(255,255,255,0.05)}
+.hero-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.08);cursor:pointer;transition:all .3s}
+.hero-dot.active{background:#dbf343;border-color:#dbf343;box-shadow:0 0 8px rgba(219,243,67,.4)}
+.ahero-right-inner{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px}
+.ahero-grad{position:absolute;inset:0;background:linear-gradient(to right,rgba(17,16,16,.75) 0%,transparent 50%);pointer-events:none}
+.ahero-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:5;background:rgba(0,0,0,.45);border:1px solid rgba(255,255,255,0.15);color:#f7f7f7;width:38px;height:38px;border-radius:50%;font-size:20px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;font-family:'Inter',sans-serif;line-height:1;padding:0}
+.ahero-arrow:hover{background:rgba(219,243,67,.85);color:#111010;border-color:#dbf343}
+.ahero-arrow-left{left:14px}
+.ahero-arrow-right{right:14px}
+.ahero-city-tag{position:absolute;bottom:16px;left:16px;z-index:5;font-size:8px;letter-spacing:3px;text-transform:uppercase;color:rgba(247,247,247,.45);background:rgba(0,0,0,.4);padding:3px 10px;border-radius:2px}
+.a-pill{display:inline-block;font-size:8px;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:4px 12px;border-radius:2px;margin-bottom:14px;align-self:flex-start;background:#dbf343;color:#111010}
+.a-name{font-family:'Bebas Neue',sans-serif;font-size:80px;line-height:.85;letter-spacing:-1px;color:#f7f7f7;margin-bottom:10px}
+.a-alias{font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:14px;color:#680bd6}
+.a-quote{font-size:13px;color:#777;line-height:1.65;max-width:480px;border-left:2px solid #dbf343;padding-left:14px;font-style:italic;text-align:justify}
+.avatar-circle{width:88px;height:88px;border-radius:50%;border:2px solid #dbf343;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:32px;background:rgba(0,0,0,.5);position:relative;z-index:1;color:#dbf343}
+.avatar-city{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(247,247,247,.3);position:relative;z-index:1}
+.avatar-line{position:relative;z-index:1;height:1px;width:28px;background:#dbf343}
+.rel-banner{display:flex;align-items:stretch;border-bottom:1px solid rgba(255,255,255,0.05)}
+.rel-bar{width:4px;flex-shrink:0;background:#dbf343}
+.rel-body{padding:14px 24px;display:flex;align-items:center;gap:16px;width:100%;flex-wrap:wrap}
+.rel-tag{font-size:8px;font-weight:800;letter-spacing:2px;text-transform:uppercase;flex-shrink:0;color:#dbf343}
+.rel-name{font-family:'Bebas Neue',sans-serif;font-size:22px;color:#f7f7f7;letter-spacing:.5px}
+.rel-info{font-size:11px;color:#555;margin-left:auto}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid rgba(255,255,255,0.05)}
+.stat-box{padding:18px 20px;border-right:1px solid rgba(255,255,255,0.05)}
+.stat-box:last-child{border-right:none}
+.stat-box:not(:last-child){border-right:1px solid rgba(255,255,255,0.05)}
+.stat-plat{font-size:8px;font-weight:800;letter-spacing:2px;text-transform:uppercase;margin-bottom:5px;color:#dbf343}
+.stat-num{font-family:'Bebas Neue',sans-serif;font-size:24px;color:#f7f7f7;line-height:1.1}
+.stat-sub{font-size:9px;color:#555;margin-top:2px}
+.sec{padding:26px 32px;border-bottom:1px solid rgba(255,255,255,0.05)}
+.sec-label{font-size:8px;letter-spacing:3px;text-transform:uppercase;font-weight:800;margin-bottom:16px;color:#dbf343}
+.bio-short{font-size:15px;line-height:1.8;max-width:800px;color:#f7f7f7;text-align:justify}
+.bio-long{font-size:12px;line-height:1.85;color:#666;max-width:700px;margin-top:14px;display:none;text-align:justify}
+.bio-long.open{display:block}
+.bio-long p{margin-bottom:11px;text-align:justify}
+.read-btn{background:transparent;border:1px solid rgba(255,255,255,0.1);color:#f7f7f7;padding:6px 16px;border-radius:2px;font-size:10px;cursor:pointer;margin-top:12px;letter-spacing:1px;text-transform:uppercase;font-family:'Inter',sans-serif;transition:all .15s}
+.read-btn:hover{border-color:#680bd6;color:#680bd6}
+.pal-row{display:flex;gap:4px;margin-top:10px}
+.pal-swatch{height:28px;flex:1;border-radius:2px;border:1px solid rgba(255,255,255,0.07);cursor:default;position:relative}
+.pal-swatch:hover::after{content:attr(data-hex);position:absolute;bottom:calc(100% + 4px);left:50%;transform:translateX(-50%);font-size:8px;background:#222;color:#f7f7f7;padding:2px 6px;border-radius:2px;white-space:nowrap;z-index:10;font-family:'Inter',sans-serif}
+.links-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:5px}
+.link-item{background:#1a1a1a;border:1px solid rgba(255,255,255,0.06);border-radius:2px;padding:9px 13px;display:flex;align-items:center;gap:8px;text-decoration:none;transition:all .15s}
+.link-item:hover{border-color:rgba(104,11,214,.5);background:rgba(104,11,214,.04)}
+.link-plat{font-size:8px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#dbf343;min-width:56px}
+.link-handle{font-size:10px;color:#f7f7f7;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.link-dot{width:4px;height:4px;border-radius:50%;flex-shrink:0;margin-left:auto;background:#dbf343}
+.a-footer{padding:20px 32px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,0.04)}
+.a-footer-brand{font-family:'Bebas Neue',sans-serif;font-size:12px;letter-spacing:3px;color:rgba(247,247,247,.15)}
+.a-footer-contact{font-size:10px;color:#555}
+.a-footer-contact span{color:#dbf343}
+
+/* WHATSAPP FLOATING BUTTON */
+@keyframes wp-pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6),0 4px 16px rgba(37,211,102,.4)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0),0 4px 16px rgba(37,211,102,.4)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0),0 4px 16px rgba(37,211,102,.4)}}
+@keyframes wp-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.whatsapp-float{position:fixed;bottom:24px;right:24px;z-index:999;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 16px rgba(37,211,102,.4);transition:transform .25s,box-shadow .25s;border:none;text-decoration:none;animation:wp-pulse 2.5s ease-in-out infinite,wp-float 4s ease-in-out infinite}
+.whatsapp-float:hover{transform:scale(1.08);box-shadow:0 6px 24px rgba(37,211,102,.55);animation-play-state:paused}
+.whatsapp-float svg{width:32px;height:32px;fill:#fff}
+.whatsapp-float::after{content:'Contactar por WhatsApp';position:absolute;right:70px;background:#1a1a1a;color:#f7f7f7;font-size:11px;padding:8px 14px;border-radius:4px;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity .2s;font-family:'Inter',sans-serif;border:1px solid rgba(255,255,255,0.08)}
+.whatsapp-float:hover::after{opacity:1}
+
+/* PALETTE INFO NOTE */
+.pal-note{font-size:10px;color:#555;margin-top:4px;font-style:italic}
+
+/* PROVIDED BY INNOVATEX */
+.provided-by{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#444;font-size:10px;letter-spacing:1px;font-family:'Inter',sans-serif;transition:color .25s;margin-left:auto;flex-shrink:0;margin-right:80px}
+.provided-by:hover{color:#e8f95a}
+.provided-by img{height:32px;width:auto;object-fit:contain;opacity:.5;transition:opacity .25s}
+.provided-by:hover img{opacity:1}
+.provided-by span{font-weight:600}
+.footer-left-group{display:flex;align-items:center;gap:16px;flex-wrap:wrap;flex:1}
+.footer-right-group{display:flex;align-items:center;gap:20px;flex-shrink:0}
+
+/* RESPONSIVE */
+/* ── TABLETS (≤900px) ── */
+@media(max-width:900px){
+  .manifesto-strip,.services-grid,.vp-grid{grid-template-columns:1fr}
+  .manifesto-strip{gap:40px}
+  .pillars-grid,.impact-grid{grid-template-columns:1fr}
+  .ahero{grid-template-columns:1fr}
+  .ahero-right{height:340px}
+  .a-name{font-size:52px}
+  .hero-content{padding:0 24px 60px;grid-template-columns:1fr;gap:32px}
+  .hero-right{justify-content:center}
+  .hero-logo{max-width:180px}
+  .manifesto-strip,.pillars,.value-props,.impact,.services,.roster-section,.cta-section{padding:60px 24px}
+  .hero-stat{padding:20px 24px}
+  .footer{flex-direction:column;gap:8px;text-align:center;padding:28px 24px 60px}
+  .share-section{flex-direction:column;align-items:flex-start}
+  .share-url-box{width:100%}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .stat-box{border-bottom:1px solid rgba(255,255,255,0.05)}
+  .links-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}
+}
+
+/* ── MÓVILES (≤600px) ── */
+@media(max-width:600px){
+  .nav{padding:8px 12px;gap:8px}
+  .nav-logo{font-size:14px;letter-spacing:1px;gap:6px}
+  .nav-logo img{height:26px}
+  .nav-logo span{font-size:12px;display:none}
+  .tab{padding:4px 8px;font-size:7px;letter-spacing:0.5px}
+  .hero-eyebrow{font-size:8px;letter-spacing:2px;margin-bottom:18px}
+  .hero-title{font-size:clamp(42px,11vw,72px);margin-bottom:20px}
+  .hero-tagline{font-size:13px;margin-bottom:28px}
+  .hero-content{padding:0 16px 40px}
+  .hero-logo{max-width:120px}
+  .btn-primary,.btn-secondary{padding:11px 20px;font-size:9px;letter-spacing:1px}
+  .hero-stat-num{font-size:28px}
+  .stat-slide{padding:16px 16px}
+  .section-title{font-size:clamp(28px,6vw,48px)}
+  .pillar-name{font-size:26px}
+  .pillar-card{padding:24px 20px}
+  .pillar-num{font-size:50px;top:10px;right:16px}
+  .vp-item{padding:24px 20px}
+  .vp-num{font-size:50px;top:10px;right:16px}
+  .vp-title{font-size:20px}
+  .impact-card{padding:24px 20px}
+  .impact-num{font-size:38px}
+  .svc-card{padding:24px 20px}
+  .svc-name{font-size:24px}
+  .a-name{font-size:42px}
+  .ahero-left{padding:24px 16px}
+  .ahero-right{height:260px}
+  .a-quote{font-size:12px}
+  .bio-short{font-size:13px}
+  .sec{padding:20px 16px}
+  .a-footer{flex-direction:column;gap:6px;padding:16px 16px;text-align:center}
+  .a-footer-contact{font-size:9px}
+  .cta-section{padding:80px 20px}
+  .cta-title{font-size:clamp(36px,8vw,64px)}
+  .cta-sub{font-size:13px;max-width:100%}
+  .manifesto-strip,.pillars,.value-props,.impact,.services,.roster-section,.cta-section{padding:50px 16px}
+  .footer{padding:20px 16px 70px;gap:6px}
+  .footer-brand{font-size:11px}
+  .provided-by{margin-right:60px}
+  .hero-stats{overflow-x:auto}
+  .share-section{padding:12px 16px 20px}
+  .home-pk{padding:32px 16px}
+  .home-pk-title{font-size:40px}
+  .roster-pk{grid-template-columns:1fr}
+  .rc-art{height:300px}
+  .rc-name{font-size:26px}
+  .links-grid{grid-template-columns:1fr}
+  .impact-grid{gap:16px}
+  .services-grid{gap:2px}
+  .whatsapp-float{bottom:16px;right:16px;width:52px;height:52px}
+  .whatsapp-float svg{width:28px;height:28px}
+  .whatsapp-float::after{display:none}
+}
+
+/* ── TELÉFONOS PEQUEÑOS (≤400px) ── */
+@media(max-width:400px){
+  .nav-logo span{display:none}
+  .tab{padding:3px 6px;font-size:6px}
+  .hero-title{font-size:clamp(32px,10vw,52px)}
+  .hero-logo{max-width:100px}
+  .rc-art{height:240px}
+  .a-name{font-size:34px}
+  .ahero-right{height:220px}
+  .whatsapp-float{bottom:12px;right:12px;width:46px;height:46px}
+  .whatsapp-float svg{width:24px;height:24px}
+}
+
+/* ── TOUCH / ACCESIBILIDAD ── */
+@media(pointer:coarse){
+  .tab{min-height:34px;padding:6px 14px}
+  .btn-primary,.btn-secondary,.read-btn,.share-copy-btn,.share-open-btn{min-height:40px;padding:12px 24px}
+  .rc-arr{font-size:22px}
+  .ahero-arrow{width:44px;height:44px;font-size:24px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-logo" onclick="showPanel('sello')"><img src="images/logo.jpg" alt="OKAN"> <span>OKAN · MUSIC COMPANY</span></div>
+  <div class="nav-tabs" id="nav-tabs">
+    <button class="tab active" data-panel="sello">Sello</button>
+    <button class="tab" data-panel="presskit">Press Kit</button>
+  </div>
+</nav>
+
+<div id="app"></div>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a id="whatsapp-float-btn" class="whatsapp-float" aria-label="Contactar por WhatsApp" title="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+  </svg>
+</a>
+
+<script>
+/* ═══════════════════════════════════
+   DATA
+═══════════════════════════════════ */
+// Paletas de artista: solo informativas, se muestran únicamente en la sección "Paleta de color".
+const ARTISTS = [
+  {
+    "id": "nathalia",
+    "name": "NATHALÍA",
+    "alias": null,
+    "genre": "R&B · Dancehall · Trap",
+    "city": "Colombia / Italia",
+    "quote": "La metamorfosis no es fragilidad — es metal.",
+    "image": "images/nathalia-03.jpg",
+    "banner": [
+      "images/nathalia-03.jpg",
+      "images/nathalia-01.jpg",
+      "images/nathalia-02.jpg",
+      "images/nathalia-04.jpg"
+    ],
+    "pal": [
+      "#45BDB0",
+      "#BFB0A8",
+      "#8B3F8B",
+      "#F5A030",
+      "#2C1A10",
+      "#ffffff"
+    ],
+    "artBg": "linear-gradient(155deg,#08100f 0%,#10201e 50%,#152a28 100%)",
+    "stats": [
+      {
+        "plat": "Spotify",
+        "num": "21",
+        "sub": "oyentes / mes"
+      },
+      {
+        "plat": "Instagram",
+        "num": "6.448",
+        "sub": "@nathalia.itt"
+      },
+      {
+        "plat": "TikTok",
+        "num": "584",
+        "sub": "@nathalia.itt"
+      },
+      {
+        "plat": "Facebook",
+        "num": "207",
+        "sub": "seguidores"
+      }
+    ],
+    "release": {
+      "name": "ADICTOTO / Mucha Clase",
+      "info": "29.900 streams · Spotify"
+    },
+    "bioShort": "NATHALÍA es una artista colombiana que fusiona R&B, Dancehall y Trap en una propuesta musical que representa evolución, fuerza y transformación. Su proyecto artístico nace de una nueva etapa personal y profesional, simbolizada por una mariposa de metal: una figura que conserva la belleza de la transformación, pero que refleja fortaleza, determinación y carácter. A través de su música, NATHALÍA conecta emociones profundas con una estética moderna, elegante y poderosa.",
+    "bioLong": [
+      "Su concepto central: metamorfosis de acero. Tres universos visuales: TELA (capas de identidad), AIRE (libertad y movimiento), AGUA (profundidad y renovación).",
+      "Estética: accesorios plateados, cabello efecto húmedo, maquillaje oscuro, vestuarios de impacto. Logo: mariposa cromada.",
+      "Paleta: teal, gris cálido, púrpura, naranja, chocolate oscuro. Nueva voz femenina de la escena urbana alternativa latinoamericana."
+    ],
+    "links": [
+      {
+        "plat": "Spotify",
+        "handle": "NATHALÍA",
+        "url": "https://open.spotify.com/intl-es/artist/2qB0VROnEMLtLkMCIirTe7"
+      },
+      {
+        "plat": "Apple Music",
+        "handle": "NATHALÍA",
+        "url": "https://music.apple.com/cl/artist/nathal%C3%ADa/1691191736"
+      },
+      {
+        "plat": "Instagram",
+        "handle": "@nathalia.itt",
+        "url": "https://www.instagram.com/nathalia.itt/"
+      },
+      {
+        "plat": "Facebook",
+        "handle": "nathaliaait",
+        "url": "https://www.facebook.com/nathaliaait"
+      },
+      {
+        "plat": "TikTok",
+        "handle": "@nathaliaitt",
+        "url": "https://www.tiktok.com/@nathaliaitt"
+      }
+    ]
+  },
+  {
+    "id": "luis08",
+    "name": "Luis08",
+    "alias": "El Humildoso",
+    "genre": "Dancehall · Perreo · Dembow",
+    "city": "Cali, Colombia",
+    "quote": "No presumo, para no carecer de lo que tengo.",
+    "image": "images/luis08-cover.png",
+    "banner": [
+      "images/luis08-cover.png",
+      "images/luis08.png",
+      "images/luis08-banner-1.png",
+      "images/luis08-banner-2.png",
+      "images/luis08-banner-3.png",
+      "images/luis08-banner-4.png"
+    ],
+    "pal": [
+      "#7D5045",
+      "#EED3B6",
+      "#DAA520",
+      "#C1440E",
+      "#2C2010",
+      "#ffffff"
+    ],
+    "artBg": "linear-gradient(155deg,#0d0a04 0%,#1c1204 50%,#241805 100%)",
+    "stats": [
+      {
+        "plat": "Spotify",
+        "num": "5.817",
+        "sub": "oyentes / mes"
+      },
+      {
+        "plat": "Instagram",
+        "num": "2.521",
+        "sub": "@luis08music"
+      },
+      {
+        "plat": "TikTok",
+        "num": "1.605",
+        "sub": "@luis08music"
+      },
+      {
+        "plat": "YouTube",
+        "num": "4.29K",
+        "sub": "suscriptores"
+      }
+    ],
+    "release": {
+      "name": "ME COMPRE UN CRYPTON — Remix",
+      "info": "483.876 streams · Spotify"
+    },
+    "bioShort": "Luis08, conocido también como \"El Humildoso\", es un artista urbano colombiano que representa la cercanía, la autenticidad y la conexión real con la gente. A través de géneros como Dancehall, Perreo y Dembow, construye una propuesta musical cargada de energía, ritmo y experiencias cotidianas que reflejan la vida de quienes sueñan en grande sin olvidar de dónde vienen. Su esencia radica en mantenerse cercano a su comunidad y convertir cada canción en una celebración de la realidad del barrio.",
+    "bioLong": [
+      "Su esencia no es ostentación sino identificación. El público ve en él a alguien que entiende su realidad y comparte sus mismos códigos culturales.",
+      "Inspirado en Ryan Castro: carrera donde el artista es parte de la comunidad. Luis08 aspira a esa misma conexión auténtica.",
+      "Concepto audiovisual: exteriores orgánicos — un mismo espacio con diferentes sets. Bocinas de colores, ambiente de barrio vivo, streetwear auténtico."
+    ],
+    "links": [
+      {
+        "plat": "Spotify",
+        "handle": "Luis08",
+        "url": "https://open.spotify.com/intl-es/artist/5Acu1PUhhTmnFEHlhlZxzR"
+      },
+      {
+        "plat": "Instagram",
+        "handle": "@luis08music",
+        "url": "https://www.instagram.com/luis08music/"
+      },
+      {
+        "plat": "TikTok",
+        "handle": "@luis08music",
+        "url": "https://www.tiktok.com/@luis08music"
+      },
+      {
+        "plat": "YouTube",
+        "handle": "@Luis08music",
+        "url": "https://www.youtube.com/@Luis08music"
+      },
+      {
+        "plat": "Facebook",
+        "handle": "luis08musica",
+        "url": "https://www.facebook.com/luis08musica"
+      },
+      {
+        "plat": "Apple Music",
+        "handle": "Luis08",
+        "url": "https://music.apple.com/ec/artist/luis08-el-humildoso/1591164275"
+      },
+      {
+        "plat": "Amazon Music",
+        "handle": "Luis08",
+        "url": "https://music.amazon.co.uk/artists/B09JYSFXLS/luis08-el-humildoso"
+      }
+    ]
+  },
+  {
+    "id": "alee",
+    "name": "ALEE",
+    "alias": null,
+    "genre": "Trap · Detroit · Reggaetón",
+    "city": "Cali, Colombia",
+    "quote": "Eso es Facilll!",
+    "image": "images/alee-01.jpg",
+    "banner": [
+      "images/alee-01.jpg",
+      "images/alee-02.png",
+      "images/alee-03.png",
+      "images/alee-04.jpg",
+      "images/alee-05.jpg"
+    ],
+    "pal": [
+      "#82462A",
+      "#000000",
+      "#B07056",
+      "#A98663",
+      "#081931",
+      "#ffffff"
+    ],
+    "artBg": "linear-gradient(155deg,#0d0608 0%,#1c0808 50%,#240505 100%)",
+    "stats": [
+      {
+        "plat": "Spotify",
+        "num": "644",
+        "sub": "oyentes / mes"
+      },
+      {
+        "plat": "Instagram",
+        "num": "1.240",
+        "sub": "@aleeeoficial_"
+      },
+      {
+        "plat": "TikTok",
+        "num": "535",
+        "sub": "@aleee.oficial"
+      },
+      {
+        "plat": "Facebook",
+        "num": "40",
+        "sub": "seguidores"
+      }
+    ],
+    "release": {
+      "name": "CARAMELOS",
+      "info": "Aleee, Escarria, Geanpi · Spotify"
+    },
+    "bioShort": "Desde las calles de Cali nace ALEE, un artista que encuentra en la música una forma de representar las vivencias, sueños y desafíos de una generación que busca abrirse camino. Influenciado por el trap, el sonido Detroit y el reggaetón, ALEE desarrolla una propuesta musical donde la autenticidad es el eje principal.",
+    "bioLong": [
+      "Desde las calles de Cali nace ALEE, un artista que encuentra en la música una forma de representar las vivencias, sueños y desafíos de una generación que busca abrirse camino.",
+      "Influenciado por el trap, el sonido Detroit y el reggaetón, ALEE desarrolla una propuesta musical donde la autenticidad es el eje principal. Sus canciones retratan la realidad del barrio, las experiencias cotidianas, las aspiraciones de crecimiento personal y la visión de un futuro construido con esfuerzo y disciplina.",
+      "Más que un cantante, ALEE proyecta una identidad auténtica que conecta con quienes han vivido procesos similares. Su imagen combina elementos urbanos contemporáneos, una estética minimalista y una fuerte conexión con la cultura callejera de Cali, ciudad que inspira gran parte de su narrativa visual y musical.",
+      "Su proyecto artístico se encuentra en una etapa de consolidación, construyendo una comunidad que valora la transparencia, la cercanía y la representación genuina de la vida urbana. Cada lanzamiento busca fortalecer una marca que no pretende aparentar, sino mostrar la realidad de un joven que transforma sus experiencias en música y que aspira a convertirse en una de las voces representativas de la nueva escena urbana colombiana."
+    ],
+    "links": [
+      {
+        "plat": "Spotify",
+        "handle": "ALEE",
+        "url": "https://open.spotify.com/intl-es/artist/2wpdMMxphBwbzPB59ydfHN"
+      },
+      {
+        "plat": "Instagram",
+        "handle": "@aleeeoficial_",
+        "url": "https://www.instagram.com/aleeeoficial_"
+      },
+      {
+        "plat": "TikTok",
+        "handle": "@aleee.oficial",
+        "url": "https://www.tiktok.com/@aleee.oficial"
+      },
+      {
+        "plat": "Facebook",
+        "handle": "Aleee Oficial",
+        "url": "https://www.facebook.com/people/Aleee-oficial/100087928582676/"
+      },
+      {
+        "plat": "Apple Music",
+        "handle": "ALEE",
+        "url": "https://music.apple.com/us/artist/aleee/216013645"
+      },
+      {
+        "plat": "Amazon Music",
+        "handle": "ALEE",
+        "url": "https://music.amazon.com/es-co/artists/B0016NCV4S/aleee"
+      }
+    ]
+  },
+  {
+    "id": "issab",
+    "name": "ISSAB",
+    "alias": null,
+    "genre": "Trap · R&B · Detroit · Dancehall",
+    "city": "Cali, Colombia",
+    "quote": "No vinimos a ser escogidos. Vinimos a elegirnos.",
+    "image": "images/issab-cover.jpg",
+    "banner": [
+      "images/issab-01.jpg",
+      "images/issab-02.jpg",
+      "images/issab-03.jpg",
+      "images/issab-04.jpg",
+      "images/issab-05.jpg",
+      "images/issab-06.jpg"
+    ],
+    "pal": [
+      "#D4A878",
+      "#6B6060",
+      "#5C0A12",
+      "#FFD700",
+      "#ffffff",
+      "#000000"
+    ],
+    "artBg": "linear-gradient(155deg,#0d0808 0%,#1c0a08 50%,#220808 100%)",
+    "stats": [
+      {
+        "plat": "Spotify",
+        "num": "1.636",
+        "sub": "oyentes / mes"
+      },
+      {
+        "plat": "Instagram",
+        "num": "167K",
+        "sub": "@__issab"
+      },
+      {
+        "plat": "TikTok",
+        "num": "1.3M",
+        "sub": "@issab____"
+      },
+      {
+        "plat": "YouTube",
+        "num": "1.61K",
+        "sub": "suscriptores"
+      }
+    ],
+    "release": {
+      "name": "La Dama",
+      "info": "24.362 streams · Spotify"
+    },
+    "bioShort": "ISSAB es una artista colombiana que fusiona Trap, R&B, Detroit, Dancehall y Perreo para construir una propuesta musical donde la fuerza, la sensibilidad y la irreverancia conviven en equilibrio. Su proyecto representa a una mujer que ha decidido elegirse a sí misma todos los días, transformando sus experiencias en mensajes de crecimiento, independencia y autenticidad. Más que una artista, ISSAB se convierte en la voz de quienes aprendieron que el verdadero poder comienza cuando uno deja de buscar aprobación externa y empieza a reconocerse a sí mismo.ISSAB representa a las mujeres poderosas, multifacéticas y seguras de sí mismas.",
+    "bioLong": [
+      "ISSAB es una artista colombiana que fusiona Trap, R&B, Detroit, Dancehall y Perreo para construir una propuesta musical donde la fuerza, la sensibilidad y la irreverancia conviven en equilibrio.",
+      "Su proyecto representa a una mujer que ha decidido elegirse a sí misma todos los días, transformando sus experiencias en mensajes de crecimiento, independencia y autenticidad.",
+      "Más que una artista, ISSAB se convierte en la voz de quienes aprendieron que el verdadero poder comienza cuando uno deja de buscar aprobación externa y empieza a reconocerse a sí mismo.",
+      "ISSAB representa a las mujeres poderosas, multifacéticas y seguras de sí mismas."
+    ],
+    "links": [
+      {
+        "plat": "Spotify",
+        "handle": "ISSAB",
+        "url": "https://open.spotify.com/intl-es/artist/2KBMtPb6kB3FHyIM2regQM"
+      },
+      {
+        "plat": "Instagram",
+        "handle": "@__issab",
+        "url": "https://www.instagram.com/__issab/"
+      },
+      {
+        "plat": "TikTok",
+        "handle": "@issab____",
+        "url": "https://www.tiktok.com/@issab____"
+      },
+      {
+        "plat": "Apple Music",
+        "handle": "ISSAB",
+        "url": "https://music.apple.com/co/artist/issab/1692056212"
+      },
+      {
+        "plat": "Amazon Music",
+        "handle": "ISSAB",
+        "url": "https://music.amazon.com/es-cl/artists/B0C7NY2BM3/issab"
+      }
+    ]
+  },
+  {
+    "id": "jeiry",
+    "name": "JEIRY",
+    "alias": null,
+    "genre": "Tropical · Urbano",
+    "city": "Buenaventura / Cali",
+    "quote": "El de la Fucking Química.",
+    "image": "images/jeiry-01.jpg",
+    "banner": [
+      "images/jeiry-01.jpg",
+      "images/jeiry-02.jpg",
+      "images/jeiry-03.jpg",
+      "images/jeiry-04.jpg",
+      "images/jeiry-05.jpg"
+    ],
+    "pal": [
+      "#FF9408",
+      "#CA3F16",
+      "#95122C",
+      "#100C08",
+      "#F3F4F5",
+      "#7D5834"
+    ],
+    "artBg": "linear-gradient(155deg,#0d0803 0%,#1c0d04 50%,#251205 100%)",
+    "stats": [
+      {
+        "plat": "Spotify",
+        "num": "15",
+        "sub": "oyentes / mes"
+      },
+      {
+        "plat": "Instagram",
+        "num": "39.6K",
+        "sub": "@jeiry.oficial"
+      },
+      {
+        "plat": "TikTok",
+        "num": "215.1K",
+        "sub": "@jeiryoficial"
+      },
+      {
+        "plat": "YouTube",
+        "num": "566",
+        "sub": "suscriptores"
+      }
+    ],
+    "release": {
+      "name": "Un Perreito en Cali",
+      "info": "Video oficial · YouTube"
+    },
+    "bioShort": "JEIRY es un artista integral que fusiona música, movimiento y dirección creativa para construir experiencias que van más allá del escenario. Cantante, coreógrafo y director artístico, desarrolla una propuesta moderna donde cada canción, presentación y elemento visual forman parte de un mismo universo creativo. Inspirado por la elegancia contemporánea y la conexión emocional con su audiencia, JEIRY representa una nueva generación de artistas que convierten la música en una experiencia transformadora.",
+    "bioLong": [
+      "Tres pilares: cantante que transmite emociones reales, coreógrafo que convierte esas emociones en movimiento, director artístico que supervisa la narrativa visual completa.",
+      "\"La Pócima\" — su narrativa central: una fuerza invisible que despierta el cuerpo, potencia la creatividad y transforma la energía.",
+      "Inspirado en Chris Brown, Michael Jackson y Bruno Mars. Minimalismo elegante: cadenas finas, gafas de sol, gorras casuales chic."
+    ],
+    "links": [
+      {
+        "plat": "Spotify",
+        "handle": "JEIRY",
+        "url": "https://open.spotify.com/intl-es/artist/5hm2oLJulVc6e8MQerh4Hg"
+      },
+      {
+        "plat": "Instagram",
+        "handle": "@jeiry.oficial",
+        "url": "https://www.instagram.com/jeiry.oficial/"
+      },
+      {
+        "plat": "TikTok",
+        "handle": "@jeiryoficial",
+        "url": "https://www.tiktok.com/@jeiryoficial"
+      },
+      {
+        "plat": "Facebook",
+        "handle": "JEIRYK",
+        "url": "https://www.facebook.com/JEIRYK"
+      },
+      {
+        "plat": "Apple Music",
+        "handle": "JEIRY",
+        "url": "https://music.apple.com/mx/artist/jeiry/1683216587"
+      }
+    ]
+  },
+  {
+    "id": "dolche",
+    "name": "DOLCHE",
+    "alias": "Páramo",
+    "genre": "Urbano Alternativo",
+    "city": "Cali, Colombia",
+    "quote": "Lo dulce que sobrevive en lo agreste.",
+    "image": "images/dolche-03.jpg",
+    "banner": [
+      "images/dolche-03.jpg",
+      "images/dolche-01.jpg",
+      "images/dolche-02.jpg",
+      "images/dolche-04.jpg"
+    ],
+    "pal": [
+      "#c8e03a",
+      "#f5f0e8",
+      "#2a2a18",
+      "#4a5a20",
+      "#1a1a0a",
+      "#888860"
+    ],
+    "artBg": "linear-gradient(155deg,#080d04 0%,#0d1408 50%,#101808 100%)",
+    "stats": [
+      {
+        "plat": "Spotify",
+        "num": "Activo",
+        "sub": "En crecimiento"
+      },
+      {
+        "plat": "Instagram",
+        "num": "Activo",
+        "sub": "@dolche.paramo"
+      },
+      {
+        "plat": "TikTok",
+        "num": "Activo",
+        "sub": "@dolche.paramo"
+      },
+      {
+        "plat": "Manager",
+        "num": "Lacoin",
+        "sub": "OKAN Music"
+      }
+    ],
+    "release": {
+      "name": "Proyecto debut 2025",
+      "info": "En desarrollo · OKAN Music"
+    },
+    "bioShort": "DOLCHE PÁRAMO fusiona lo urbano con lo alternativo. Su nombre es su concepto: lo dulce y la aspereza del páramo — resistencia, belleza salvaje y sobrevivencia.",
+    "bioLong": [
+      "En desarrollo artístico bajo OKAN Music Company, DOLCHE construye los cimientos de una carrera pensada para durar.",
+      "El páramo como metáfora: un ecosistema único que simboliza resistencia, belleza salvaje y sobrevivencia en condiciones extremas.",
+      "Identidad visual: dualidad ciudad-naturaleza, suavidad y aspereza, contemporáneo y crudo."
+    ],
+    "links": [
+      {
+        "plat": "Spotify",
+        "handle": "Dolche Páramo",
+        "url": "https://open.spotify.com/intl-es/artist/55lBS2xlHkjoom8J6HUhiG"
+      },
+      {
+        "plat": "Instagram",
+        "handle": "@dolche.paramo",
+        "url": "https://www.instagram.com/dolche.paramo"
+      },
+      {
+        "plat": "TikTok",
+        "handle": "@dolche.paramo",
+        "url": "https://www.tiktok.com/@dolche.paramo"
+      }
+    ]
+  },
+  {
+    "id": "wendy",
+    "name": "WENDY ROW",
+    "alias": "La Patrona",
+    "genre": "Popular · Corridos contemporáneos",
+    "city": "Cali, Colombia",
+    "quote": "La Patrona no pide permiso.",
+    "image": "images/wendy-01.jpg",
+    "banner": [
+      "images/wendy-01.jpg",
+      "images/wendy-02.jpg",
+      "images/wendy-03.jpg",
+      "images/wendy-04.jpg"
+    ],
+    "pal": [
+      "#82462A",
+      "#000000",
+      "#B07056",
+      "#A98663",
+      "#081931",
+      "#D8D3C5"
+    ],
+    "artBg": "linear-gradient(155deg,#180808 0%,#240808 50%,#1a0505 100%)",
+    "stats": [
+      {
+        "plat": "Instagram",
+        "num": "50K",
+        "sub": "@wendyrow_"
+      },
+      {
+        "plat": "Alcance",
+        "num": "101.9K",
+        "sub": "vistas / 30 días"
+      },
+      {
+        "plat": "Posts",
+        "num": "138",
+        "sub": "publicaciones"
+      },
+      {
+        "plat": "Booking",
+        "num": "Lacoin",
+        "sub": "+57 317 445 5169"
+      }
+    ],
+    "release": {
+      "name": "Debut 2025 — La Patrona",
+      "info": "En preparación · Yugen Music"
+    },
+    "bioShort": "WENDY \"La Patrona\" es una artista del género popular que representa una nueva visión femenina dentro de la música regional contemporánea. Su propuesta combina elegancia, carácter y autenticidad para conectar con un público que valora la fuerza interior, la independencia y la determinación. Con una imagen sofisticada y moderna, Wendy rompe los estereotipos tradicionales del género para construir una identidad propia basada en el liderazgo, la pasión y la genuinidad.",
+    "bioLong": [
+      "Bajo el concepto 'La Patrona', su propuesta está inspirada en mujeres que toman decisiones y construyen su futuro desde la confianza. No poder sobre los demás — dominio de sí misma.",
+      "Visualmente: sombrero moderno negro, botas cowboy blancas, joyería de poder, vestidos rojos de impacto. Elegancia contemporánea sin folklore excesivo.",
+      "Tipografía script elegante. Paleta oscura con vino, terracota y beige cálido."
+    ],
+    "links": [
+      {
+        "plat": "Instagram",
+        "handle": "@wendyrow_",
+        "url": "https://www.instagram.com/wendyrow_"
+      },
+      {
+        "plat": "Booking",
+        "handle": "Lacoin · OKAN",
+        "url": "#"
+      }
+    ]
+  }
+];
+
+/* ═══════════════════════════════════
+   BUILD SELLO PAGE
+═══════════════════════════════════ */
+function buildSelloPage(){
+  return `
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-eyebrow">Cali, Colombia · Sello Independiente · Est. 2025</div>
+        <h1 class="hero-title">
+          No fabricamos<br>
+          moldes.<br>
+          <em>Liberamos</em><br>
+          identidades.
+        </h1>
+        <p class="hero-tagline">
+          Okan es el sello donde los artistas urbanos emergentes de Colombia<br>
+          <strong>construyen carreras que duran — sin atajos, sin moldes, sin promesas vacías.</strong>
+        </p>
+        <div class="hero-ctas">
+          <button class="btn-primary" onclick="showPanel('presskit')">Ver Roster Completo</button>
+          <button class="btn-secondary" onclick="document.getElementById('servicios').scrollIntoView({behavior:'smooth'})">Servicios</button>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="images/logo.jpg" alt="OKAN Music" class="hero-logo">
+      </div>
+    </div>
+    <div class="hero-stats" id="hero-stats">
+      <div class="stats-track" id="stats-track">
+        <div class="stat-slide"><div class="hero-stat"><div class="hero-stat-num">7<span>+</span></div><div class="hero-stat-label">Artistas en desarrollo</div></div></div>
+        <div class="stat-slide"><div class="hero-stat"><div class="hero-stat-num"><span>+</span>1.3<span>M</span></div><div class="hero-stat-label">Seguidores TikTok roster</div></div></div>
+        <div class="stat-slide"><div class="hero-stat"><div class="hero-stat-num">483<span>K</span></div><div class="hero-stat-label">Streams último sencillo</div></div></div>
+        <div class="stat-slide"><div class="hero-stat"><div class="hero-stat-num">100<span>%</span></div><div class="hero-stat-label">Equipo bajo un mismo techo</div></div></div>
+      </div>
+      <div class="stats-indicators" id="stats-indicators">
+        <span class="stats-dot active" data-index="0"></span>
+        <span class="stats-dot" data-index="1"></span>
+        <span class="stats-dot" data-index="2"></span>
+        <span class="stats-dot" data-index="3"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANIFIESTO -->
+  <section class="manifesto-strip">
+    <div>
+      <div class="manifesto-label">Filosofía</div>
+      <div class="manifesto-text">
+        Música<br>desde el alma,<br>
+        impulsada por<br><em>la conciencia.</em>
+      </div>
+    </div>
+    <div>
+      <div class="manifesto-tagline" style="margin-bottom:24px;margin-top:0">Por qué existimos</div>
+      <div class="manifesto-body">
+        <p>Vimos demasiadas carreras buenas perderse por falta de estructura, asesoría honesta y respaldo profesional. <strong>El talento sin equipo no llega lejos.</strong></p>
+        <p>En Cali hay artistas con algo real que decir. Lo que faltaba era un sello que los tratara como artistas, no como productos. Que les explicara el negocio antes de que firmaran. Que construyera con ellos, no sobre ellos.</p>
+        <p>Eso es Okan. Un espacio donde la identidad del artista no se negocia. Donde la calidad no es opcional. Donde el proceso importa tanto como el resultado.</p>
+        <p><strong>No prometemos viralidad. Prometemos lo que entregamos: trabajo real.</strong></p>
+      </div>
+      <div class="manifesto-tagline">Si toca el corazón, es Okan.</div>
+    </div>
+  </section>
+
+  <!-- PILARES -->
+  <section class="pillars">
+    <div class="section-header">
+      <div class="section-eyebrow">Nuestros pilares</div>
+      <div class="section-title">Lo que nos<br>define — y nos<br>diferencia.</div>
+    </div>
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <div class="pillar-num">01</div>
+        <div class="pillar-tag">Pilar 1</div>
+        <div class="pillar-name">Anti-Molde</div>
+        <div class="pillar-desc">No buscamos que el artista encaje en lo que vende. Buscamos que destaque por ser él mismo. Construimos a partir de lo que el artista ya es — no contra lo que es. La identidad no se negocia.</div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-num">02</div>
+        <div class="pillar-tag">Pilar 2</div>
+        <div class="pillar-name">Vulnerabilidad Fresca</div>
+        <div class="pillar-desc">Fomentamos música que toque fibras reales — hablando de sentimientos y realidades humanas de manera honesta y contemporánea. Priorizamos letras con cuerpo emocional real sobre fórmulas urbanas vacías.</div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-num">03</div>
+        <div class="pillar-tag">Pilar 3</div>
+        <div class="pillar-name">Minimalismo Elevado</div>
+        <div class="pillar-desc">Una estética visual limpia y sofisticada que elimina el ruido para que lo único que brille sea el talento y la emoción. Sin chrome, sin drip, sin neón. La calidad técnica es la decoración.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUE PROPS -->
+  <section class="value-props">
+    <div class="section-header">
+      <div class="section-eyebrow">Por qué Okan</div>
+      <div class="section-title">Cinco cosas que<br>ningún sello caleño<br>está combinando hoy.</div>
+    </div>
+    <div class="vp-grid">
+      <div class="vp-item">
+        <div class="vp-num">01</div>
+        <div class="vp-title">Equipo completo bajo un techo</div>
+        <div class="vp-text">Producción musical, dirección artística, audiovisual, distribución, editorial, asesoría legal y estrategia digital. <strong>Un equipo permanente, no freelancers sueltos.</strong> Sin coordinación a distancia. Sin perderse en el proceso.</div>
+      </div>
+      <div class="vp-item">
+        <div class="vp-num">02</div>
+        <div class="vp-title">Roster reducido por diseño</div>
+        <div class="vp-text">No competimos por volumen. Pocos artistas, <strong>atención completa a cada uno.</strong> Cuando Okan firma a alguien, le dedica el equipo entero — no una décima parte de un equipo saturado.</div>
+      </div>
+      <div class="vp-item">
+        <div class="vp-num">03</div>
+        <div class="vp-title">Honestidad antes de firmar</div>
+        <div class="vp-text">Le explicamos al artista cómo funciona el negocio antes de que ponga su nombre. <strong>Cero promesas vacías.</strong> Qué firma, qué pierde, qué gana, qué retiene. El artista decide con información real, no con emoción del momento.</div>
+      </div>
+      <div class="vp-item">
+        <div class="vp-num">04</div>
+        <div class="vp-title">Distribución global desde Cali</div>
+        <div class="vp-text">No solo distribución digital en plataformas — conexiones con medios nacionales e internacionales. <strong>Prensa, sincronización, colaboraciones estratégicas.</strong> El artista de Okan no suena solo en Spotify: suena en el mundo.</div>
+      </div>
+      <div class="vp-item">
+        <div class="vp-num">05</div>
+        <div class="vp-title">Formación en el negocio musical</div>
+        <div class="vp-text">El artista no solo crea — aprende. Derechos editoriales, regalías, contratos, mercado digital, construcción de marca. <strong>Cada lanzamiento es una clase magistral.</strong> Artistas que se gradúan de Okan nunca vuelven a firmar sin entender qué firman.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACTO SOCIAL Y CULTURAL -->
+  <section class="impact">
+    <div class="section-header">
+      <div class="section-eyebrow">Impacto Cultural</div>
+      <div class="section-title">Lo que Okan<br>construye para<br>Cali y Colombia.</div>
+    </div>
+    <div class="impact-grid">
+      <div class="impact-card">
+        <div class="impact-num">+400K</div>
+        <div class="impact-label">Millones en regalías</div>
+        <div class="impact-desc">Los ingresos de artistas colombianos en Spotify se duplicaron entre 2021 y 2024, superando los 400 mil millones de pesos. Okan se inserta en ese mercado en expansión y lleva más de ese capital a Cali.</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-num">0</div>
+        <div class="impact-label">Sellos premium en Cali hoy</div>
+        <div class="impact-desc">El espacio premium de la industria musical caleña está vacío. Okan llena ese hueco — y lo hace desde los tres pilares que ningún competidor local está articulando: Anti-molde, Vulnerabilidad fresca, Minimalismo elevado.</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-num">100%</div>
+        <div class="impact-label">Talento local con visión global</div>
+        <div class="impact-desc">Todos los artistas del roster son colombianos. El orgullo de Cali no se negocia. La ambición es global. Okan construye ese puente: identidad local, distribución y presencia internacionales.</div>
+      </div>
+    </div>
+    <div style="margin-top:56px;padding:40px;background:#1a1a1a;border:1px solid rgba(255,255,255,0.05);display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center">
+      <div>
+        <div style="font-size:9px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#dbf343;margin-bottom:20px">Compromiso cultural</div>
+        <p style="font-size:14px;line-height:1.85;color:#888;text-align:justify">Cali tiene una escena urbana real, artistas con identidad propia y una historia musical que el mundo está empezando a reconocer. Lo que faltaba era infraestructura profesional para que ese talento llegara a donde merece llegar.</p>
+        <p style="font-size:14px;line-height:1.85;color:#888;margin-top:14px;text-align:justify">Okan no es solo un sello. Es una propuesta para demostrar que desde Cali se puede construir música de nivel internacional — <strong style="color:#f7f7f7">sin copiar a nadie, sin pedir permiso, sin perder la identidad.</strong></p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        ${[
+          ["Artistas con identidad propia", "No replicamos sonidos que pegan. Desarrollamos lo que el artista ya es."],
+          ["Generación de empleo creativo", "Cada artista firmado activa un equipo: productor, fotógrafo, director, estratega."],
+          ["Cali como referente urbano", "Cada release bien hecho pone el nombre de Cali en playlists globales."],
+          ["Educación del artista", "Enseñamos el negocio. El artista que pasa por Okan no vuelve a firmar sin entender qué firma."]
+        ].map(([t,d])=>`
+          <div style="padding:16px;background:#111010;border:1px solid rgba(255,255,255,0.05);border-left:2px solid #dbf343">
+            <div style="font-size:11px;font-weight:700;color:#f7f7f7;margin-bottom:4px">${t}</div>
+            <div style="font-size:11px;color:#555;line-height:1.6">${d}</div>
+          </div>`).join('')}
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="services" id="servicios">
+    <div class="section-header">
+      <div class="section-eyebrow">Estructura de carrera</div>
+      <div class="section-title">Un camino claro.<br>Un nivel a la vez.</div>
+    </div>
+    <p style="font-size:14px;color:#666;max-width:640px;line-height:1.85;margin-top:20px;margin-bottom:0;text-align:justify">Okan no trabaja con todos los artistas de la misma forma. Cada proyecto entra en el nivel que corresponde según su etapa de desarrollo. El objetivo es siempre el mismo: avanzar al siguiente nivel con bases sólidas, no quemar etapas.</p>
+    <div class="services-grid">
+
+      <!-- NIVEL 1 -->
+      <div class="svc-card">
+        <div class="svc-tier">Nivel 1 — Primer contacto</div>
+        <div class="svc-name">Conoce el proceso</div>
+        <div style="font-size:12px;color:#555;margin-bottom:20px;line-height:1.7;text-align:justify">Para el artista que quiere entender cómo trabaja Okan antes de comprometerse. Acceso a servicios puntuales, sin firma, sin exclusividad. El artista prueba el nivel del equipo, el equipo conoce al artista.</div>
+        <ul class="svc-list">
+          <li>Sesión de grabación profesional con producción incluida</li>
+          <li>Diagnóstico de identidad artística y propuesta de valor</li>
+          <li>Revisión y orientación legal sobre contratos existentes</li>
+          <li>Shooting fotográfico con dirección artística</li>
+          <li>Producción de un sencillo completo: mezcla, master y cover</li>
+        </ul>
+      </div>
+
+      <!-- NIVEL 2 -->
+      <div class="svc-card">
+        <div class="svc-tier">Nivel 2 — Lanzamiento formativo</div>
+        <div class="svc-name">Tu primer release profesional</div>
+        <div style="font-size:12px;color:#555;margin-bottom:20px;line-height:1.7;text-align:justify">Para el artista que ya tiene identidad definida y quiere ejecutar su primer lanzamiento con nivel competitivo. Aprende cómo funciona un ciclo de release completo desde adentro. Okan acompaña, forma y entrega.</div>
+        <ul class="svc-list">
+          <li>Formación en el proceso completo de lanzamiento musical</li>
+          <li>Producción de 1 a 3 sencillos con identidad visual unificada</li>
+          <li>Dirección de videoclip y visualizers con concepto artístico</li>
+          <li>Distribución digital y registro editorial</li>
+          <li>Estrategia de lanzamiento y presencia digital básica</li>
+          <li>Sesión de cierre: análisis de resultados y próximos pasos</li>
+        </ul>
+      </div>
+
+      <!-- NIVEL 3 -->
+      <div class="svc-card">
+        <div class="svc-tier">Nivel 3 — Desarrollo sostenido</div>
+        <div class="svc-name">Construye tu carrera</div>
+        <div style="font-size:12px;color:#555;margin-bottom:20px;line-height:1.7;text-align:justify">Para el artista que ya lanzó, validó su propuesta y está listo para construir de forma continua. Okan asume la dirección integral de la carrera: musical, visual, legal y digital. El artista aprende el negocio mientras trabaja en él.</div>
+        <ul class="svc-list">
+          <li>Dirección artística integral y plan de carrera a 12 meses</li>
+          <li>Producción musical continua: álbum, EPs, sencillos</li>
+          <li>Formación en derechos, regalías y estructura editorial</li>
+          <li>Estrategia digital sostenida con métricas y ajustes</li>
+          <li>Gestión de booking, eventos y colaboraciones</li>
+          <li>Asesoría legal permanente — el artista entiende lo que firma</li>
+        </ul>
+      </div>
+
+      <!-- NIVEL 4 -->
+      <div class="svc-card" style="border-color:rgba(104,11,214,0.25)">
+        <div class="svc-tier" style="color:#dbf343;letter-spacing:2px">Nivel 4 — Firma exclusiva</div>
+        <div class="svc-name">Artista de la casa</div>
+        <div style="font-size:12px;color:#555;margin-bottom:20px;line-height:1.7;text-align:justify">Reservado para uno o dos artistas del roster. Exclusividad total. Okan invierte en el artista como si fuera propio porque lo es. Este nivel no se abre, se gana. El artista llega aquí cuando ambas partes saben que hay algo real que construir juntos.</div>
+        <ul class="svc-list">
+          <li>Inversión directa del sello en producción de alto nivel</li>
+          <li>Estrategia de internacionalización: mercados, plataformas, prensa</li>
+          <li>Formación avanzada en negocio musical, derechos y patrimonio artístico</li>
+          <li>Relaciones públicas, prensa nacional e internacional</li>
+          <li>Gestión de giras, alianzas con marcas y sincronización</li>
+          <li>Participación en derechos editoriales y conexos bajo Okan</li>
+        </ul>
+      </div>
+
+    </div>
+    <div style="margin-top:40px;padding:28px 36px;background:#1a1a1a;border:1px solid rgba(255,255,255,0.05);border-left:3px solid #dbf343;max-width:640px">
+      <div style="font-size:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#dbf343;margin-bottom:10px">El criterio para avanzar de nivel</div>
+      <p style="font-size:13px;color:#666;line-height:1.8;text-align:justify">No hay atajos entre niveles. El artista avanza cuando tiene las bases del nivel anterior consolidadas — no antes. Eso protege al artista de quemarse, y protege al trabajo de salir antes de tiempo. Aquí no se corre por correr. Se construye para durar.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-label">¿Tienes algo real que decir?</div>
+    <div class="cta-title">Empecemos<br>a construir.</div>
+    <p class="cta-sub">No prometemos viralidad. No prometemos hits. Prometemos estructura, criterio y trabajo real — desde el primer día hasta el último release.</p>
+    <div class="hero-ctas" style="justify-content:center">
+      <button class="btn-primary" onclick="showPanel('presskit')">Ver el Roster</button>
+      <a href="mailto:okanmusiccompany@gmail.com" class="btn-secondary" style="text-decoration:none;display:inline-flex;align-items:center">Contactar al equipo</a>
+    </div>
+    <div class="cta-contact">Booking & Prensa: <span>Lacoin · +57 317 445 5169</span> · <span>Cali, Colombia</span></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-left-group">
+      <img src="images/logo.jpg" alt="OKAN" style="height:40px;width:auto;object-fit:contain">
+      <div>
+        <div class="footer-brand">OKAN MUSIC COMPANY · Cali, Colombia · 2025–2026</div>
+        <div class="footer-tagline">Si toca el corazón, es Okan.</div>
+      </div>
+    </div>
+    <a class="provided-by" href="https://www.instagram.com/innovatex_web/" target="_blank" rel="noreferrer" title="Desarrollado por Innovatexweb">
+      <span>Provided by</span>
+      <img src="images/innovatex-logo.png" alt="Innovatexweb">
+    </a>
+  </footer>`;
+}
+
+/* ═══════════════════════════════════
+   BUILD PRESS KIT PAGE
+═══════════════════════════════════ */
+function initials(name){ return name.split(' ').map(w=>w[0]).join('').substring(0,2); }
+
+function buildRosterCard(a,idx){
+  const d=document.createElement('div');
+  d.className='rc';
+  const bgStyle = a.image ? `background-image:url('${a.image}');background-size:cover;background-repeat:no-repeat;background-position:center;` : `background:${a.artBg};`;
+  d.innerHTML=`
+    <div class="rc-art" style="${bgStyle}">
+    <div class="rc-grad"></div>
+      <div class="rc-badge">${a.genre.split('·')[0].trim()}</div>
+    </div>
+    <div class="rc-body">
+      <div class="rc-num">0${idx+1}</div>
+      <div class="rc-name">${a.name}</div>
+      ${a.alias?`<div class="rc-alias">"${a.alias}"</div>`:'<div style="height:13px"></div>'}
+      <div class="rc-stats-row">
+        ${a.stats.slice(0,2).map(s=>`<div class="rc-stat"><strong>${s.num}</strong> ${s.plat}</div>`).join('')}
+      </div>
+    </div>
+    <div class="rc-arr">↗</div>`;
+  d.addEventListener('click',()=>showArtist(a.id));
+  return d;
+}
+
+function buildArtistPage(a){
+  const sw=a.pal.map(c=>`<div class="pal-swatch" style="background:${c}" data-hex="${c}" title="${c}"></div>`).join('');
+  const stats=a.stats.map(s=>`
+    <div class="stat-box">
+      <div class="stat-plat">${s.plat}</div>
+      <div class="stat-num">${s.num}</div>
+      <div class="stat-sub">${s.sub}</div>
+    </div>`).join('');
+  const links=a.links.map(l=>`
+    <a class="link-item" href="${l.url}" target="_blank" rel="noreferrer">
+      <span class="link-plat">${l.plat}</span>
+      <span class="link-handle">${l.handle}</span>
+      <div class="link-dot"></div>
+    </a>`).join('');
+  const bioP=a.bioLong.map(p=>`<p>${p}</p>`).join('');
+  const bgImage = a.image ? `background-image:url('${a.image}');background-size:contain;background-repeat:no-repeat;background-position:center;` : `background:${a.artBg};`;
+  const palHexList = a.pal.join(', ');
+  return `
+  <div class="ahero">
+    <div class="ahero-left">
+      <div class="a-pill">${a.genre}</div>
+      <div class="a-name">${a.name}</div>
+      ${a.alias?`<div class="a-alias">— "${a.alias}" —</div>`:''}
+      <div class="a-quote">"${a.quote}"</div>
+    </div>
+    <div class="ahero-right" style="${bgImage}">
+      <div class="ahero-grad"></div>
+      <button class="ahero-arrow ahero-arrow-left" aria-label="Anterior foto">&lsaquo;</button>
+      <button class="ahero-arrow ahero-arrow-right" aria-label="Siguiente foto">&rsaquo;</button>
+      <div class="ahero-city-tag">${a.city}</div>
+    </div>
+  </div>
+  ${a.banner?`<div class="hero-dots" id="hero-dots-${a.id}">${a.banner.map((_,i)=>`<span class="hero-dot ${i===0?'active':''}" data-index="${i}"></span>`).join('')}</div>`:''}
+  <div class="sec" style="padding:26px 32px;border-bottom:1px solid rgba(255,255,255,0.05)">
+    <div class="sec-label">Biografía</div>
+    <div class="bio-short">${a.bioShort}</div>
+    <div class="bio-long" id="bio-${a.id}">${bioP}</div>
+    <button class="read-btn" id="btn-${a.id}" onclick="toggleBio('${a.id}')">Leer más ↓</button>
+  </div>
+  <div class="rel-banner">
+    <div class="rel-bar"></div>
+    <div class="rel-body">
+      <span class="rel-tag">Último lanzamiento</span>
+      <span class="rel-name">${a.release.name}</span>
+      <span class="rel-info">${a.release.info}</span>
+    </div>
+  </div>
+  <div class="stats-grid">${stats}</div>
+  <div class="sec">
+    <div class="sec-label">Paleta de color</div>
+    <p class="pal-note">Paleta informativa del artista. No se usa en títulos ni elementos principales de la interfaz.</p>
+    <div class="pal-row">${sw}</div>
+    <div style="font-size:10px;color:#555;margin-top:6px;font-family:monospace">${palHexList}</div>
+  </div>
+  <div class="sec" style="border-bottom:none">
+    <div class="sec-label">Plataformas y redes</div>
+    <div class="links-grid">${links}</div>
+  </div>
+  <div class="a-footer">
+    <div class="footer-left-group">
+      <img src="images/logo.jpg" alt="OKAN" style="height:32px;width:auto;object-fit:contain">
+      <div class="a-footer-brand">OKAN MUSIC COMPANY · 2025–2026</div>
+      <div class="a-footer-contact">Booking & Prensa: <span>Lacoin · +57 317 445 5169</span></div>
+    </div>
+    <a class="provided-by" href="https://www.instagram.com/innovatex_web/" target="_blank" rel="noreferrer" title="Desarrollado por Innovatexweb">
+      <span>Provided by</span>
+      <img src="images/innovatex-logo.png" alt="Innovatexweb">
+    </a>
+  </div>`;
+}
+
+/* ═══════════════════════════════════
+   RENDER
+═══════════════════════════════════ */
+const app=document.getElementById('app');
+const tabsEl=document.getElementById('nav-tabs');
+
+// Sello panel
+const selloPanel=document.createElement('div');
+selloPanel.id='panel-sello';
+selloPanel.className='panel active';
+selloPanel.innerHTML=buildSelloPage();
+app.appendChild(selloPanel);
+
+// Press Kit panel
+const pkPanel=document.createElement('div');
+pkPanel.id='panel-presskit';
+pkPanel.className='panel';
+app.appendChild(pkPanel);
+
+// Press Kit home
+const pkHome=document.createElement('div');
+pkHome.id='panel-pk-home';
+pkHome.className='panel active';
+pkHome.innerHTML=`
+  <div class="home-pk">
+    <div style="margin-bottom:32px">
+      <img src="images/logo.jpg" alt="OKAN" style="height:80px;width:auto;object-fit:contain">
+    </div>
+    <div class="home-pk-title">PRESS <em>KIT</em><br>2025–26</div>
+    <p class="home-pk-sub">Okan Music Company · Cali, Colombia · Management & Artist Development · Booking: Lacoin +57 317 445 5169</p>
+    <div class="roster-pk" id="roster-pk"></div>
+  </div>
+  <div class="share-section" id="share-section">
+    <div class="share-label">Press Kit Okan Music</div>
+    <div class="share-url-box">
+      <span class="share-url-text" id="share-url-text"></span>
+      <button class="share-copy-btn" id="share-copy-btn" onclick="copyShareLink()">Copiar enlace</button>
+    </div>
+  </div>`;
+pkPanel.appendChild(pkHome);
+
+// Artist panels
+ARTISTS.forEach(a=>{
+  const p=document.createElement('div');
+  p.id=`panel-artist-${a.id}`;
+  p.className='panel';
+  p.innerHTML=buildArtistPage(a);
+  pkPanel.appendChild(p);
+});
+
+// Build roster
+const rosterPk=pkHome.querySelector('#roster-pk');
+ARTISTS.forEach((a,i)=>rosterPk.appendChild(buildRosterCard(a,i)));
+
+/* ═══════════════════════════════════
+   SHARE / LINK FUNCTIONS
+═══════════════════════════════════ */
+function getShareUrl(){
+  const base = window.location.href.split('#')[0];
+  return base + '#presskit';
+}
+
+function updateShareUrlDisplay(){
+  const el = document.getElementById('share-url-text');
+  if(el) el.textContent = getShareUrl();
+}
+updateShareUrlDisplay();
+
+/* ═══════════════════════════════════
+   HERO STATS AUTO-ROTATING CAROUSEL
+═══════════════════════════════════ */
+(function initStatsCarousel(){
+  const track = document.getElementById('stats-track');
+  const indicators = document.getElementById('stats-indicators');
+  if(!track || !indicators) return;
+
+  const slides = track.querySelectorAll('.stat-slide');
+  const dots = indicators.querySelectorAll('.stats-dot');
+  const totalSlides = slides.length;
+  let currentIndex = 0;
+  const slideDuration = 1000;
+
+  function getSlidesPerView(){
+    // Match CSS breakpoints
+    if(window.innerWidth >= 1100) return 4;   // all visible, no scroll needed
+    if(window.innerWidth >= 700) return 2;    // 2 slides per view
+    return 1; // 1 slide per view
+  }
+
+  function updateCarousel(index){
+    const slidesPerView = getSlidesPerView();
+    currentIndex = index % totalSlides;
+
+    // Calculate the total number of positions (groups)
+    const totalGroups = Math.ceil(totalSlides / slidesPerView);
+    const groupIndex = Math.floor(currentIndex / slidesPerView) % totalGroups;
+
+    // Move track - each slide takes 100/slidesPerView percentage
+    const translateX = -(groupIndex * slidesPerView * (100 / slidesPerView));
+    track.style.transform = `translateX(${translateX}%)`;
+
+    // Update dots (show active for the group)
+    dots.forEach((dot, i) => {
+      const dotGroupStart = i * slidesPerView;
+      dot.classList.toggle('active', currentIndex >= dotGroupStart && currentIndex < dotGroupStart + slidesPerView);
+    });
+  }
+
+  function nextSlide(){
+    const slidesPerView = getSlidesPerView();
+    // If all slides are visible, just cycle through for the dots animation
+    if(slidesPerView >= totalSlides){
+      currentIndex = (currentIndex + 1) % totalSlides;
+      dots.forEach((d,i)=>d.classList.toggle('active', i===currentIndex));
+      return;
+    }
+    updateCarousel(currentIndex + 1);
+  }
+
+  // Click on dots
+  dots.forEach(dot=>{
+    dot.addEventListener('click', ()=>{
+      const idx = parseInt(dot.getAttribute('data-index'));
+      updateCarousel(idx);
+    });
+  });
+
+  // Auto-rotate
+  setInterval(nextSlide, slideDuration);
+
+  // Handle resize to recalculate
+  let lastSlidesPerView = getSlidesPerView();
+  window.addEventListener('resize', ()=>{
+    const spv = getSlidesPerView();
+    if(spv !== lastSlidesPerView){
+      lastSlidesPerView = spv;
+      if(spv >= totalSlides){
+        track.style.transform = 'translateX(0%)';
+      }
+      updateCarousel(currentIndex);
+    }
+  });
+
+  // Initialize
+  updateCarousel(0);
+})();
+
+window.copyShareLink = function(){
+  const url = getShareUrl();
+  navigator.clipboard.writeText(url).then(()=>{
+    const btn = document.getElementById('share-copy-btn');
+    const original = btn.textContent;
+    btn.textContent = '✓ Copiado!';
+    btn.style.background = '#680bd6';
+    btn.style.color = '#f7f7f7';
+    setTimeout(()=>{
+      btn.textContent = original;
+      btn.style.background = '#dbf343';
+      btn.style.color = '#111010';
+    }, 2000);
+  }).catch(()=>{
+    prompt('Copiar manualmente (Ctrl+C):', url);
+  });
+};
+
+/* ═══════════════════════════════════
+   WHATSAPP API
+═══════════════════════════════════ */
+(function initWhatsApp(){
+  const WHATSAPP_NUMBER = '573174455169';
+  const WHATSAPP_MSG = encodeURIComponent('Hola OKAN Music, me interesa conocer más sobre sus servicios y artistas.');
+
+  const btn = document.getElementById('whatsapp-float-btn');
+  if(!btn) return;
+  btn.addEventListener('click', ()=>{
+    window.open('https://wa.me/' + WHATSAPP_NUMBER + '?text=' + WHATSAPP_MSG, '_blank', 'noopener');
+  });
+})();
+
+/* ═══════════════════════════════════
+   NAVIGATION
+═══════════════════════════════════ */
+function showPanel(id){
+  document.querySelectorAll('#app>.panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById(`panel-${id}`).classList.add('active');
+  const t=document.querySelector(`[data-panel="${id}"]`);
+  if(t)t.classList.add('active');
+  window.scrollTo(0,0);
+  // Update hash
+  window.location.hash = id;
+  // Reset pk subpanels
+  if(id==='presskit'){
+    pkPanel.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+    pkHome.classList.add('active');
+    updateShareUrlDisplay();
+  }
+}
+
+function showArtist(id){
+  pkPanel.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+  document.getElementById(`panel-artist-${id}`).classList.add('active');
+  document.querySelectorAll('#app>.panel').forEach(p=>p.classList.remove('active'));
+  pkPanel.classList.add('active');
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.querySelector('[data-panel="presskit"]').classList.add('active');
+  window.location.hash = 'artist-' + id;
+  window.scrollTo(0,0);
+}
+
+window.switchToArtist=function(id){
+  showPanel('presskit');
+  setTimeout(()=>showArtist(id),10);
+};
+
+tabsEl.addEventListener('click',e=>{
+  const b=e.target.closest('.tab');
+  if(!b)return;
+  showPanel(b.dataset.panel);
+});
+
+/* ═══════════════════════════════════
+   BIO TOGGLE
+═══════════════════════════════════ */
+window.toggleBio=function(id){
+  const bio=document.getElementById(`bio-${id}`);
+  const btn=document.getElementById(`btn-${id}`);
+  bio.classList.toggle('open');
+  btn.textContent=bio.classList.contains('open')?'Leer menos ↑':'Leer más ↓';
+};
+
+/* ═══════════════════════════════════
+   HASH NAVIGATION ON LOAD
+═══════════════════════════════════ */
+(function initHash(){
+  const hash = window.location.hash.replace('#','');
+  if(!hash) return;
+  if(hash==='presskit'){
+    showPanel('presskit');
+  } else if(hash.startsWith('artist-')){
+    const artistId = hash.replace('artist-','');
+    const artist = ARTISTS.find(a=>a.id===artistId);
+    if(artist){
+      showPanel('presskit');
+      setTimeout(()=>showArtist(artistId),10);
+    }
+  }
+})();
+
+/* ═══════════════════════════════════
+   HERO IMAGE ROTATOR (Artist Page)
+   Rota el background del .ahero-right
+═══════════════════════════════════ */
+(function initHeroCarousels(){
+  ARTISTS.forEach(a=>{
+    if(!a.banner) return;
+    const heroRight = document.querySelector('#panel-artist-'+a.id+' .ahero-right');
+    const dotsContainer = document.getElementById('hero-dots-'+a.id);
+    if(!heroRight || !dotsContainer) return;
+
+    const arrowLeft = heroRight.querySelector('.ahero-arrow-left');
+    const arrowRight = heroRight.querySelector('.ahero-arrow-right');
+    const dots = dotsContainer.querySelectorAll('.hero-dot');
+    const totalSlides = a.banner.length;
+    let currentIndex = 0;
+    let interval;
+
+    function goTo(index){
+      currentIndex = ((index % totalSlides) + totalSlides) % totalSlides;
+      heroRight.style.backgroundImage = 'url(' + a.banner[currentIndex] + ')';
+      dots.forEach((d,i)=>d.classList.toggle('active', i===currentIndex));
+    }
+
+    function nextSlide(){ goTo(currentIndex + 1); }
+    function prevSlide(){ goTo(currentIndex - 1); }
+
+    function startAuto(){
+      stopAuto();
+      interval = setInterval(nextSlide, 3000);
+    }
+
+    function stopAuto(){
+      if(interval) clearInterval(interval);
+    }
+
+    // Arrow buttons
+    if(arrowLeft) arrowLeft.addEventListener('click', (e)=>{
+      e.stopPropagation();
+      prevSlide();
+      stopAuto();
+      startAuto();
+    });
+    if(arrowRight) arrowRight.addEventListener('click', (e)=>{
+      e.stopPropagation();
+      nextSlide();
+      stopAuto();
+      startAuto();
+    });
+
+    // Dots
+    dots.forEach(dot=>{
+      dot.addEventListener('click', ()=>{
+        const idx = parseInt(dot.getAttribute('data-index'));
+        goTo(idx);
+        stopAuto();
+        startAuto();
+      });
+    });
+
+    // Pause on hover
+    heroRight.addEventListener('mouseenter', stopAuto);
+    heroRight.addEventListener('mouseleave', startAuto);
+
+    // Set initial background from banner[0] instead of the inline style default
+    if(a.banner[0]){
+      heroRight.style.backgroundImage = 'url(' + a.banner[0] + ')';
+    }
+    startAuto();
+    goTo(0);
+  });
+})();
+</script>
+</body>
+</html>

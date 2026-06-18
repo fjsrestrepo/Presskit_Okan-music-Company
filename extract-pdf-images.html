@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extractor de Imágenes PDF</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #1a1a1a;
+      color: #f0f0f0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #c8e03a;
+    }
+    .subtitle {
+      color: #888;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+    .section {
+      background: #242424;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #c8e03a;
+    }
+    input[type="file"] {
+      display: block;
+      margin-bottom: 12px;
+      padding: 8px;
+    }
+    button {
+      background: #c8e03a;
+      color: #1a1a1a;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: #d8f04a;
+    }
+    .artista-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px;
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+    .artista-item span {
+      color: #888;
+    }
+    .artista-item.ready {
+      border-color: #c8e03a;
+      background: rgba(200, 224, 58, 0.05);
+    }
+    .artista-item.ready span {
+      color: #c8e03a;
+    }
+    #output {
+      margin-top: 20px;
+      padding: 16px;
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 4px;
+      max-height: 300px;
+      overflow-y: auto;
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+    }
+    .success { color: #c8e03a; }
+    .error { color: #ff6b6b; }
+    .info { color: #4dabf7; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>🖼️ Extractor de Imágenes PDF</h1>
+  <p class="subtitle">Herramienta para extraer la primera página de los PDFs de artistas OKAN como imágenes</p>
+
+  <div class="section">
+    <div class="section-title">Archivos PDF de artistas</div>
+    <div id="artistList">
+      <div class="artista-item">
+        <span>ISSAB PROPUESTA VISUAL.pdf</span>
+        <input type="file" id="file-issab" accept=".pdf" onchange="handleFile('issab')">
+      </div>
+      <div class="artista-item">
+        <span>JEIRY PROPUESTA VISUAL.pdf</span>
+        <input type="file" id="file-jeiry" accept=".pdf" onchange="handleFile('jeiry')">
+      </div>
+      <div class="artista-item">
+        <span>WENDY propuesta visual.pdf</span>
+        <input type="file" id="file-wendy" accept=".pdf" onchange="handleFile('wendy')">
+      </div>
+      <div class="artista-item">
+        <span>LUIS 08 PROPUESTA VISUAL.pdf</span>
+        <input type="file" id="file-luis08" accept=".pdf" onchange="handleFile('luis08')">
+      </div>
+      <div class="artista-item">
+        <span>ALEE PROPUESTA VISUAL.pdf</span>
+        <input type="file" id="file-alee" accept=".pdf" onchange="handleFile('alee')">
+      </div>
+      <div class="artista-item">
+        <span>NATHALÍA PROPUESTA VISUAL.pdf</span>
+        <input type="file" id="file-nathalia" accept=".pdf" onchange="handleFile('nathalia')">
+      </div>
+    </div>
+    <button onclick="extractAllImages()">↓ Extraer todas las imágenes</button>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Log de procesamiento</div>
+    <div id="output"></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">📋 Instrucciones</div>
+    <ol style="line-height: 1.8; margin-left: 20px;">
+      <li>Selecciona cada archivo PDF usando los inputs arriba</li>
+      <li>Haz clic en "Extraer todas las imágenes"</li>
+      <li>Las imágenes se descargarán automáticamente como PNG</li>
+      <li>Mueve los archivos descargados a: <code style="background: #1a1a1a; padding: 4px 8px; border-radius: 3px;">OK PRESS/images/</code></li>
+      <li>Renombra los archivos como: <code style="background: #1a1a1a; padding: 4px 8px; border-radius: 3px;">issab.png, jeiry.png, wendy.png, luis08.png, alee.png, nathalia.png</code></li>
+    </ol>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.min.js"></script>
+<script>
+const pdfjsLib = window['pdfjs-dist/build/pdf'];
+pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.worker.min.js';
+
+const files = {};
+const output = document.getElementById('output');
+
+function log(message, type = 'info') {
+  const line = document.createElement('div');
+  line.className = type;
+  line.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+  output.appendChild(line);
+  output.scrollTop = output.scrollHeight;
+}
+
+function handleFile(artistId) {
+  const input = document.getElementById(`file-${artistId}`);
+  if (input.files.length > 0) {
+    files[artistId] = input.files[0];
+    log(`✓ ${artistId}: archivo seleccionado (${(input.files[0].size / 1024 / 1024).toFixed(2)}MB)`, 'success');
+    document.querySelector(`input[id="file-${artistId}"]`).parentElement.classList.add('ready');
+  }
+}
+
+async function extractAllImages() {
+  output.innerHTML = '';
+  log('Iniciando extracción de imágenes...', 'info');
+  
+  for (const [artistId, file] of Object.entries(files)) {
+    try {
+      log(`Procesando ${artistId}...`, 'info');
+      
+      const arrayBuffer = await file.arrayBuffer();
+      const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+      
+      // Obtener primera página
+      const page = await pdf.getPage(1);
+      
+      // Renderizar la página
+      const canvas = document.createElement('canvas');
+      const context = canvas.getContext('2d');
+      const viewport = page.getViewport({ scale: 2 });
+      
+      canvas.width = viewport.width;
+      canvas.height = viewport.height;
+      
+      await page.render({
+        canvasContext: context,
+        viewport: viewport
+      }).promise;
+      
+      // Convertir a PNG y descargar
+      canvas.toBlob(blob => {
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = `${artistId}.png`;
+        link.click();
+        URL.revokeObjectURL(url);
+        
+        log(`✓ ${artistId}: imagen extraída y descargada`, 'success');
+      }, 'image/png');
+      
+    } catch (error) {
+      log(`✗ ${artistId}: ${error.message}`, 'error');
+    }
+  }
+  
+  log('Proceso completado.', 'info');
+}
+</script>
+
+</body>
+</html>
