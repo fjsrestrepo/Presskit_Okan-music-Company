@@ -306,7 +306,7 @@ Representa liderazgo, carácter y determinación. Una propuesta femenina contemp
 - Visualmente: sombrero moderno negro, botas cowboy blancas, joyería de poder, vestidos rojos de impacto. Elegancia contemporánea sin folklore excesivo.
 - Tipografía script elegante. Paleta oscura con vino, terracota y beige cálido.
 
-**Último lanzamiento:** Debut 2025 — La Patrona — En preparación · Yugen Music
+**Último lanzamiento:** Debut 2025 — La Patrona — En preparación · OKAN Music
 
 **Stats:**
 - Instagram: 50K @wendyrow_
