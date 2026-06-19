@@ -191,7 +191,6 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
 .ahero-arrow:hover{background:rgba(219,243,67,.85);color:#111010;border-color:#dbf343}
 .ahero-arrow-left{left:14px}
 .ahero-arrow-right{right:14px}
-.ahero-quote-overlay{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:4;font-family:'Bebas Neue',sans-serif;font-size:clamp(24px,3.5vw,48px);color:#f7f7f7;text-shadow:0 2px 12px rgba(0,0,0,.7),0 0 40px rgba(0,0,0,.5);text-align:center;pointer-events:none;letter-spacing:1px;line-height:1.1;white-space:nowrap}
 .ahero-city-tag{position:absolute;bottom:16px;left:16px;z-index:5;font-size:8px;letter-spacing:3px;text-transform:uppercase;color:rgba(247,247,247,.45);background:rgba(0,0,0,.4);padding:3px 10px;border-radius:2px}
 .a-pill{display:inline-block;font-size:8px;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:4px 12px;border-radius:2px;margin-bottom:14px;align-self:flex-start;background:#dbf343;color:#111010}
 .a-name{font-family:'Bebas Neue',sans-serif;font-size:80px;line-height:.85;letter-spacing:-1px;color:#f7f7f7;margin-bottom:10px}
@@ -907,7 +906,6 @@ const bgImage = a.image ? `background-image:url('${a.image}');background-size:co
     </div>
     <div class="ahero-right" style="${bgImage}">
       <div class="ahero-grad"></div>
-      <div class="ahero-quote-overlay">"${a.quote}"</div>
       <button class="ahero-arrow ahero-arrow-left" aria-label="Anterior foto">&lsaquo;</button>
       <button class="ahero-arrow ahero-arrow-right" aria-label="Siguiente foto">&rsaquo;</button>
       <div class="ahero-city-tag">${a.city}</div>
