@@ -262,7 +262,7 @@ Cantante, coreógrafo y director creativo. Su propuesta une música, movimiento 
 **Alias:** este es el dolche
 **Género:** Dancehall · Perreo · Dembow
 **Ciudad:** Cali, Colombia
-**Frase:** "Lo dulce que sobrevive en lo agreste."
+**Frase:** "Este es el Dolche!"
 
 **Bio corta:**
 Actualmente en desarrollo bajo OKAN. Su concepto nace de la dualidad entre la suavidad y la resistencia, inspirado en la fuerza silenciosa del páramo.
