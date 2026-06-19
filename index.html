@@ -1044,6 +1044,7 @@ let currentArtist=null;
 
 function showPanel(name){
   currentPanel=name;
+  window.scrollTo(0,0);
   document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
   document.getElementById('panel-'+name).classList.add('active');
   tabsEl.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
@@ -1059,6 +1060,7 @@ function showPanel(name){
 function showArtist(id){
   currentArtist=id;
   currentPanel='presskit';
+  window.scrollTo(0,0);
   document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
   document.getElementById('panel-presskit').classList.add('active');
   tabsEl.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
