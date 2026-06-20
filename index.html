@@ -182,7 +182,7 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
 /* ARTIST PAGE */
 .ahero{display:grid;grid-template-columns:1fr 1fr;min-height:520px;border-bottom:1px solid rgba(255,255,255,0.05)}
 .ahero-left{padding:40px 32px;display:flex;flex-direction:column;justify-content:flex-end}
-.ahero-right{position:relative;overflow:hidden;background-size:cover;background-repeat:no-repeat;background-position:center top;background-color:#0d0d0d;transition:background-image .4s ease}
+.ahero-right{position:relative;overflow:hidden;background-size:contain;background-repeat:no-repeat;background-position:center center;background-color:#0d0d0d;transition:background-image .4s ease}
 .hero-dots{display:flex;justify-content:center;gap:8px;padding:10px 0;background:#111010;border-bottom:1px solid rgba(255,255,255,0.05)}
 .hero-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.08);cursor:pointer;transition:all .3s}
 .hero-dot.active{background:#dbf343;border-color:#dbf343;box-shadow:0 0 8px rgba(219,243,67,.4)}
@@ -884,7 +884,7 @@ function buildArtistPage(a){
       <div class="link-dot"></div>
     </a>`).join('');
   const bioP=a.bioLong.map(p=>`<p>${p}</p>`).join('');
-const bgImage = a.image ? `background-image:url('${a.image}');background-size:cover;background-repeat:no-repeat;background-position:center top;` : `background:${a.artBg};`;
+const bgImage = a.image ? `background-image:url('${a.image}');background-size:contain;background-repeat:no-repeat;background-position:center center;` : `background:${a.artBg};`;
   const palHexList = a.pal.join(', ');
 
   // YouTube / Music CTA
@@ -1008,9 +1008,9 @@ function buildPressKitArtist(id){
     function setBanner(i){
       cur=i;
       rightEl.style.backgroundImage=`url('${a.banner[cur]}')`;
-      rightEl.style.backgroundSize='cover';
+      rightEl.style.backgroundSize='contain';
       rightEl.style.backgroundRepeat='no-repeat';
-      rightEl.style.backgroundPosition='center top';
+      rightEl.style.backgroundPosition='center center';
       if(dotsEl){
         dotsEl.querySelectorAll('.hero-dot').forEach((d,di)=>{ d.classList.toggle('active',di===cur); });
       }
