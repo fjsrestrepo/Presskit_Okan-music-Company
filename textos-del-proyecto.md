@@ -65,7 +65,7 @@ No prometemos viralidad.
 Prometemos trabajo serio, dirección clara y un equipo comprometido con construir algo que dure.
 
 Booking & Prensa:
-Luis Castro
+OKAN
 +57 318 680 4179
 Cali, Colombia
 
@@ -79,7 +79,7 @@ Si toca el corazón, es OKAN.
 
 ## 📋 PRESS KIT 2025–26
 
-Okan Music Company · Cali, Colombia · Management & Artist Development · Booking: Luis Castro +57 318 680 4179
+Okan Music Company · Cali, Colombia · Management & Artist Development · Booking: +57 318 680 4179
 
 ---
 
@@ -252,7 +252,7 @@ Okan Music Company · Cali, Colombia · Management & Artist Development · Booki
 - Spotify: Activo — En crecimiento
 - Instagram: Activo @dolche.paramo
 - TikTok: Activo @dolche.paramo
-- Manager: Luis Castro — OKAN Music
+- Manager: OKAN — Music Company
 
 **Paleta:** #c8e03a, #f5f0e8, #2a2a18, #4a5a20, #1a1a0a, #888860
 
@@ -280,7 +280,7 @@ Okan Music Company · Cali, Colombia · Management & Artist Development · Booki
 - Instagram: 50K @wendyrow_
 - Alcance: 101.9K vistas / 30 días
 - Posts: 138 publicaciones
-- Booking: Luis Castro +57 318 680 4179
+- Booking: +57 318 680 4179
 
 **Paleta:** #82462A, #000000, #B07056, #A98663, #081931, #D8D3C5
 
