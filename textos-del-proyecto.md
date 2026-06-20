@@ -209,10 +209,10 @@ Okan Music Company · Cali, Colombia · Management & Artist Development · Booki
 
 ---
 
-### 05 — JEIRY "El de la Química"
+### 05 — JEIRY "El de la Quimik"
 **Género:** Urbano
 **Ciudad:** Buenaventura / Cali
-**Quote:** "El de la Fucking Química."
+**Quote:** "El de la Fucking Quimik."
 
 **Bio corta:** Cantante, coreógrafo y director creativo.
 
