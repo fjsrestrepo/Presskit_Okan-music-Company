@@ -1,14 +1,17 @@
-# TEXTOS DEL PROYECTO — OKAN MUSIC COMPANY PRESS KIT
+# TEXTOS DEL PROYECTO — OKAN MUSIC COMPANY PRESS KIT 2025–26
 
 ---
 
-## PÁGINA PRINCIPAL (SELLO / OKAN)
+## 🏠 PÁGINA PRINCIPAL DEL SELLO (OKAN)
 
-### Hero Title
+### HERO
+**Eyebrow:** Cali, Colombia · Sello Independiente
+
+**Título:**
 NO FABRICAMOS MOLDES.
 LIBERAMOS IDENTIDADES.
 
-### Hero Tagline
+**Tagline:**
 Hay artistas que tienen algo que decir.
 Lo difícil no es encontrarlos.
 Lo difícil es ayudarlos a crecer sin perder quiénes son.
@@ -17,15 +20,16 @@ OKAN nace para desarrollar artistas urbanos con dirección, estructura y criteri
 Construimos carreras.
 No momentos.
 
-### Hero Eyebrow
-Cali, Colombia · Sello Independiente
+**Botones:** Ver Roster Completo | Qué hacemos
 
-### Hero Stats
-- +1.3M — Seguidores acumulados en TikTok
-- 483K — Streams en el último lanzamiento destacado
-- 8+ — Artistas en desarrollo
+**Stats:**
+- +1.3M Seguidores acumulados en TikTok
+- 483K Streams en el último lanzamiento destacado
+- 8+ Artistas en desarrollo
 
-### Filosofía
+---
+
+### FILOSOFÍA
 Muchos artistas firman contratos que no entienden.
 Muchos lanzan música sin una estrategia.
 Muchos terminan persiguiendo tendencias que nunca les pertenecieron.
@@ -37,8 +41,11 @@ Antes de firmar, explicamos el negocio.
 
 Si toca el corazón, es OKAN.
 
-### Servicios (Qué hacemos)
+---
+
+### SERVICIOS (Qué hacemos)
 Todo bajo un mismo techo.
+
 - Producción musical
 - Dirección artística
 - Audiovisual
@@ -48,41 +55,44 @@ Todo bajo un mismo techo.
 - Asesoría legal
 - Desarrollo de carrera
 
-### CTA Final
+---
+
+### CTA FINAL
 ¿Tienes algo real que decir?
 Hablemos.
+
 No prometemos viralidad.
 Prometemos trabajo serio, dirección clara y un equipo comprometido con construir algo que dure.
 
-### Booking & Prensa
-Lacoin
-+57 317 445 5169
+Booking & Prensa:
+Luis Castro
++57 318 680 4179
 Cali, Colombia
 
-### Footer
+---
+
+### FOOTER
 OKAN MUSIC COMPANY · Cali, Colombia
 Si toca el corazón, es OKAN.
 
 ---
 
-## PRESS KIT HOME (ARTISTAS)
+## 📋 PRESS KIT 2025–26
 
-### Título
-PRESS KIT 2025–26
-
-### Subtítulo
-Okan Music Company · Cali, Colombia · Management & Artist Development · Booking: Lacoin +57 317 445 5169
+Okan Music Company · Cali, Colombia · Management & Artist Development · Booking: Luis Castro +57 318 680 4179
 
 ---
 
-## NATHALÍA
+## 🎤 ARTISTAS
 
+---
+
+### 01 — NATHALÍA
 **Género:** R&B · Dancehall · Trap
 **Ciudad:** Colombia / Italia
-**Frase:** "Muaaa!"
+**Quote:** "Muaaa!"
 
-**Bio corta:**
-NATHALÍA es una artista colombiana que fusiona R&B, Dancehall y Trap en una propuesta musical donde la transformación es el centro de su narrativa. Su universo creativo mezcla fuerza, elegancia y evolución personal a través de una estética inspirada en una mariposa de metal.
+**Bio corta:** NATHALÍA es una artista colombiana que fusiona R&B, Dancehall y Trap.
 
 **Bio larga:**
 - Su concepto central: metamorfosis de acero. Tres universos visuales: TELA (capas de identidad), AIRE (libertad y movimiento), AGUA (profundidad y renovación).
@@ -100,30 +110,25 @@ NATHALÍA es una artista colombiana que fusiona R&B, Dancehall y Trap en una pro
 **Paleta:** #45BDB0, #BFB0A8, #8B3F8B, #F5A030, #2C1A10, #ffffff
 
 **Links:**
-- Spotify: NATHALÍA — https://open.spotify.com/intl-es/artist/2qB0VROnEMLtLkMCIirTe7
-- Apple Music: NATHALÍA — https://music.apple.com/cl/artist/nathal%C3%ADa/1691191736
-- Instagram: @nathalia.itt — https://www.instagram.com/nathalia.itt/
-- Facebook: nathaliaait — https://www.facebook.com/nathaliaait
-- TikTok: @nathaliaitt — https://www.tiktok.com/@nathaliaitt
-
-**CTA:** Escucha a NATHALÍA en Spotify — Descubre su música ahora 🎧
+- Spotify: NATHALÍA
+- Apple Music: NATHALÍA
+- Instagram: @nathalia.itt
+- Facebook: nathaliaait
+- TikTok: @nathaliaitt
 
 ---
 
-## Luis08
-
-**Alias:** El Humildoso
+### 02 — Luis08 "El Humildoso"
 **Género:** Dancehall · Perreo · Dembow
 **Ciudad:** Cali, Colombia
-**Frase:** "No presumo, para no carecer de lo que tengo."
+**Quote:** "No presumo, para no carecer de lo que tengo."
 
-**Bio corta:**
-Luis08, conocido como "El Humildoso", es un artista construido desde la cercanía. Sus canciones reflejan la realidad del barrio, las aspiraciones cotidianas y la conexión con la gente que lo acompaña desde el inicio.
+**Bio corta:** Luis08, "El Humildoso". Dancehall, Perreo y Dembow desde Cali, Colombia.
 
 **Bio larga:**
 - Su esencia no es ostentación sino identificación. El público ve en él a alguien que entiende su realidad y comparte sus mismos códigos culturales.
-- Inspirado en Ryan Castro: carrera donde el artista es parte de la comunidad. Luis08 aspira a esa misma conexión auténtica.
-- Concepto audiovisual: exteriores orgánicos — un mismo espacio con diferentes sets. Bocinas de colores, ambiente de barrio vivo, streetwear auténtico.
+- Inspirado en Ryan Castro: carrera donde el artista es parte de la comunidad.
+- Concepto audiovisual: exteriores orgánicos, bocinas de colores, ambiente de barrio vivo, streetwear auténtico.
 
 **Último lanzamiento:** ME COMPRE UN CRYPTON — Remix — 483.876 streams · Spotify
 
@@ -136,32 +141,22 @@ Luis08, conocido como "El Humildoso", es un artista construido desde la cercaní
 **Paleta:** #7D5045, #EED3B6, #DAA520, #C1440E, #2C2010, #ffffff
 
 **Links:**
-- Spotify: Luis08 — https://open.spotify.com/intl-es/artist/5Acu1PUhhTmnFEHlhlZxzR
-- Instagram: @luis08music — https://www.instagram.com/luis08music/
-- TikTok: @luis08music — https://www.tiktok.com/@luis08music
-- YouTube: @Luis08music — https://www.youtube.com/@Luis08music
-- Facebook: luis08musica — https://www.facebook.com/luis08musica
-- Apple Music: Luis08 — https://music.apple.com/ec/artist/luis08-el-humildoso/1591164275
-- Amazon Music: Luis08 — https://music.amazon.co.uk/artists/B09JYSFXLS/luis08-el-humildoso
-
-**CTA:** Escucha a Luis08 en YouTube — Dale clic y ponla a sonar 🔊
+- Spotify: Luis08
+- Instagram: @luis08music
+- TikTok: @luis08music
+- YouTube: @Luis08music
+- Facebook: luis08musica
+- Apple Music: Luis08
+- Amazon Music: Luis08
 
 ---
 
-## ALEE
-
-**Género:** Urbano · Trap · Detroit
+### 03 — ALEE
+**Género:** Trap · Detroit
 **Ciudad:** Cali, Colombia
-**Frase:** "Eso es Facil!"
+**Quote:** "Esto es Facil!"
 
-**Bio corta:**
-ALEE representa a una generación que intenta abrirse camino sin aparentar ser otra cosa. Su propuesta nace de experiencias reales y una visión auténtica de la vida urbana caleña.
-
-**Bio larga:**
-- Desde las calles de Cali nace ALEE, un artista que encuentra en la música una forma de representar las vivencias, sueños y desafíos de una generación que busca abrirse camino.
-- Influenciado por el trap, el sonido Detroit y el reggaetón, ALEE desarrolla una propuesta musical donde la autenticidad es el eje principal. Sus canciones retratan la realidad del barrio, las experiencias cotidianas, las aspiraciones de crecimiento personal y la visión de un futuro construido con esfuerzo y disciplina.
-- Más que un cantante, ALEE proyecta una identidad auténtica que conecta con quienes han vivido procesos similares. Su imagen combina elementos urbanos contemporáneos, una estética minimalista y una fuerte conexión con la cultura callejera de Cali.
-- Su proyecto artístico se encuentra en una etapa de consolidación, construyendo una comunidad que valora la transparencia, la cercanía y la representación genuina de la vida urbana. Cada lanzamiento busca fortalecer una marca que no pretende aparentar, sino mostrar la realidad de un joven que transforma sus experiencias en música y que aspira a convertirse en una de las voces representativas de la nueva escena urbana colombiana.
+**Bio corta:** Esto es Facil!
 
 **Último lanzamiento:** CARAMELOS — Aleee, Escarria, Geanpi · Spotify
 
@@ -174,30 +169,25 @@ ALEE representa a una generación que intenta abrirse camino sin aparentar ser o
 **Paleta:** #82462A, #000000, #B07056, #A98663, #081931, #ffffff
 
 **Links:**
-- Spotify: ALEE — https://open.spotify.com/intl-es/artist/2wpdMMxphBwbzPB59ydfHN
-- Instagram: @aleeeoficial_ — https://www.instagram.com/aleeeoficial_
-- TikTok: @aleee.oficial — https://www.tiktok.com/@aleee.oficial
-- Facebook: Aleee Oficial — https://www.facebook.com/people/Aleee-oficial/100087928582676/
-- Apple Music: ALEE — https://music.apple.com/us/artist/aleee/216013645
-- Amazon Music: ALEE — https://music.amazon.com/es-co/artists/B0016NCV4S/aleee
-
-**CTA:** Escucha a ALEE en Spotify — Descubre su música ahora 🎧
+- Spotify: ALEE
+- Instagram: @aleeeoficial_
+- TikTok: @aleee.oficial
+- Facebook: Aleee Oficial
+- Apple Music: ALEE
+- Amazon Music: ALEE
 
 ---
 
-## ISSAB
-
+### 04 — ISSAB
 **Género:** Urbano · Trap · Detroit
 **Ciudad:** Cali, Colombia
-**Frase:** "Ajaaaam"
+**Quote:** "Ajaaaam"
 
-**Bio corta:**
-Independencia, seguridad y evolución. ISSAB convierte experiencias personales en canciones que conectan con mujeres que han aprendido a elegirse a sí mismas.
+**Bio corta:** ISSAB fusiona Trap, R&B, Detroit y Dancehall. Una voz poderosa de la nueva escena urbana colombiana.
 
 **Bio larga:**
-- ISSAB es una artista colombiana que fusiona Trap, R&B, Detroit, Dancehall y Perreo para construir una propuesta musical donde la fuerza, la sensibilidad y la irreverancia conviven en equilibrio.
-- Su proyecto representa a una mujer que ha decidido elegirse a sí misma todos los días, transformando sus experiencias en mensajes de crecimiento, independencia y autenticidad.
-- Más que una artista, ISSAB se convierte en la voz de quienes aprendieron que el verdadero poder comienza cuando uno deja de buscar aprobación externa y empieza a reconocerse a sí mismo.
+- ISSAB es una artista colombiana que fusiona Trap, R&B, Detroit, Dancehall y Perreo.
+- Su proyecto representa a una mujer que ha decidido elegirse a sí misma todos los días.
 - ISSAB representa a las mujeres poderosas, multifacéticas y seguras de sí mismas.
 
 **Último lanzamiento:** La Dama — 24.362 streams · Spotify
@@ -211,30 +201,20 @@ Independencia, seguridad y evolución. ISSAB convierte experiencias personales e
 **Paleta:** #D4A878, #6B6060, #5C0A12, #FFD700, #ffffff, #000000
 
 **Links:**
-- Spotify: ISSAB — https://open.spotify.com/intl-es/artist/2KBMtPb6kB3FHyIM2regQM
-- Instagram: @__issab — https://www.instagram.com/__issab/
-- TikTok: @issab____ — https://www.tiktok.com/@issab____
-- Apple Music: ISSAB — https://music.apple.com/co/artist/issab/1692056212
-- Amazon Music: ISSAB — https://music.amazon.com/es-cl/artists/B0C7NY2BM3/issab
-
-**CTA:** Escucha a ISSAB en Spotify — Descubre su música ahora 🎧
+- Spotify: ISSAB
+- Instagram: @__issab
+- TikTok: @issab____
+- Apple Music: ISSAB
+- Amazon Music: ISSAB
 
 ---
 
-## JEIRY
-
-**Alias:** El de la Química
-**Género:** Tropical · Urbano
+### 05 — JEIRY "El de la Química"
+**Género:** Urbano
 **Ciudad:** Buenaventura / Cali
-**Frase:** "El de la Fucking Química."
+**Quote:** "El de la Fucking Química."
 
-**Bio corta:**
-Cantante, coreógrafo y director creativo. Su propuesta une música, movimiento y narrativa visual dentro de un mismo universo artístico.
-
-**Bio larga:**
-- Tres pilares: cantante que transmite emociones reales, coreógrafo que convierte esas emociones en movimiento, director artístico que supervisa la narrativa visual completa.
-- "La Pócima" — su narrativa central: una fuerza invisible que despierta el cuerpo, potencia la creatividad y transforma la energía.
-- Inspirado en Chris Brown, Michael Jackson y Bruno Mars. Minimalismo elegante: cadenas finas, gafas de sol, gorras casuales chic.
+**Bio corta:** Cantante, coreógrafo y director creativo.
 
 **Último lanzamiento:** Un Perreito en Cali — Video oficial · YouTube
 
@@ -247,92 +227,76 @@ Cantante, coreógrafo y director creativo. Su propuesta une música, movimiento 
 **Paleta:** #FF9408, #CA3F16, #95122C, #100C08, #F3F4F5, #7D5834
 
 **Links:**
-- Spotify: JEIRY — https://open.spotify.com/intl-es/artist/5hm2oLJulVc6e8MQerh4Hg
-- Instagram: @jeiry.oficial — https://www.instagram.com/jeiry.oficial/
-- TikTok: @jeiryoficial — https://www.tiktok.com/@jeiryoficial
-- Facebook: JEIRYK — https://www.facebook.com/JEIRYK
-- Apple Music: JEIRY — https://music.apple.com/mx/artist/jeiry/1683216587
-
-**CTA:** Escucha a JEIRY en Spotify — Descubre su música ahora 🎧
+- Spotify: JEIRY
+- Instagram: @jeiry.oficial
+- TikTok: @jeiryoficial
+- Facebook: JEIRYK
+- Apple Music: JEIRY
 
 ---
 
-## DOLCHE
-
-**Alias:** este es el dolche
+### 06 — DOLCHE "este es el dolche"
 **Género:** Dancehall · Perreo · Dembow
 **Ciudad:** Cali, Colombia
-**Frase:** "Este es el Dolche!"
+**Quote:** "Este es el Dolche!"
 
-**Bio corta:**
-Actualmente en desarrollo bajo OKAN. Su concepto nace de la dualidad entre la suavidad y la resistencia, inspirado en la fuerza silenciosa del páramo.
+**Bio corta:** DOLCHE. Dancehall, Perreo y Dembow. Proyecto en desarrollo bajo OKAN Music Company.
 
 **Bio larga:**
 - En desarrollo artístico bajo OKAN Music Company, DOLCHE construye los cimientos de una carrera pensada para durar.
 - El páramo como metáfora: un ecosistema único que simboliza resistencia, belleza salvaje y sobrevivencia en condiciones extremas.
-- Identidad visual: dualidad ciudad-naturaleza, suavidad y aspereza, contemporáneo y crudo.
 
 **Último lanzamiento:** Proyecto debut 2025 — En desarrollo · OKAN Music
 
 **Stats:**
 - Spotify: Activo — En crecimiento
-- Instagram: Activo — @dolche.paramo
-- TikTok: Activo — @dolche.paramo
-- Manager: Lacoin — OKAN Music
+- Instagram: Activo @dolche.paramo
+- TikTok: Activo @dolche.paramo
+- Manager: Luis Castro — OKAN Music
 
 **Paleta:** #c8e03a, #f5f0e8, #2a2a18, #4a5a20, #1a1a0a, #888860
 
 **Links:**
-- Spotify: Dolche Páramo — https://open.spotify.com/intl-es/artist/55lBS2xlHkjoom8J6HUhiG
-- Instagram: @dolche.paramo — https://www.instagram.com/dolche.paramo
-- TikTok: @dolche.paramo — https://www.tiktok.com/@dolche.paramo
-
-**CTA:** Escucha a DOLCHE en Spotify — Descubre su música ahora 🎧
+- Spotify: Dolche Páramo
+- Instagram: @dolche.paramo
+- TikTok: @dolche.paramo
 
 ---
 
-## WENDY GUZMAN
-
-**Alias:** La Patrona
+### 07 — WENDY GUZMAN "La Patrona"
 **Género:** Popular · Regional Mexicano · Banda
 **Ciudad:** Cali, Colombia
-**Frase:** "La Patrona no pide permiso."
+**Quote:** "La Patrona no pide permiso."
 
-**Bio corta:**
-Representa liderazgo, carácter y determinación. Una propuesta femenina contemporánea que apuesta por la elegancia sin perder autenticidad.
+**Bio corta:** WENDY GUZMAN, "La Patrona". Música Popular y Regional Mexicano con elegancia contemporánea.
 
 **Bio larga:**
-- Bajo el concepto 'La Patrona', su propuesta está inspirada en mujeres que toman decisiones y construyen su futuro desde la confianza. No poder sobre los demás — dominio de sí misma.
-- Visualmente: sombrero moderno negro, botas cowboy blancas, joyería de poder, vestidos rojos de impacto. Elegancia contemporánea sin folklore excesivo.
-- Tipografía script elegante. Paleta oscura con vino, terracota y beige cálido.
+- Bajo el concepto 'La Patrona', su propuesta está inspirada en mujeres que toman decisiones y construyen su futuro desde la confianza.
+- Visualmente: sombrero moderno negro, botas cowboy blancas, joyería de poder, vestidos rojos de impacto.
 
-**Último lanzamiento:** Debut 2025 — La Patrona — En preparación · OKAN Music
+**Último lanzamiento:** Debut 2026 — La Patrona — En preparación · OKAN Music
 
 **Stats:**
 - Instagram: 50K @wendyrow_
 - Alcance: 101.9K vistas / 30 días
 - Posts: 138 publicaciones
-- Booking: Lacoin — +57 317 445 5169
+- Booking: Luis Castro +57 318 680 4179
 
 **Paleta:** #82462A, #000000, #B07056, #A98663, #081931, #D8D3C5
 
 **Links:**
-- Instagram: @wendyrow_ — https://www.instagram.com/wendyrow_
-- Booking: Lacoin · OKAN — #
-
-**CTA:** Escucha a WENDY GUZMAN en Spotify — Descubre su música ahora 🎧
+- Instagram: @wendyrow_
+- Booking: Luis Castro · OKAN
 
 ---
 
-## LACOIN
-
+### 08 — LACOIN
 **Alias:** Cantante · Productor Musical · CEO de OKAN
 **Género:** Dancehall Romántico · Afrobeat · R&B · Trap
 **Ciudad:** Cali, Colombia
-**Frase:** "Un piano. Una gorra. Dos versiones de la misma historia."
+**Quote:** "Un piano. Una gorra. Dos versiones de la misma historia."
 
-**Bio corta:**
-LACOIN — Artista, compositor y performer. Dancehall romántico, Afrobeat, R&B y Trap desde Cali.
+**Bio corta:** LACOIN — Artista, compositor y performer. Dancehall romántico, Afrobeat, R&B y Trap desde Cali.
 
 **Bio larga:**
 - Un piano. Una gorra. Dos versiones de la misma historia.
@@ -345,24 +309,30 @@ LACOIN — Artista, compositor y performer. Dancehall romántico, Afrobeat, R&B 
 
 **Stats:**
 - Spotify: Activo — En crecimiento
-- Instagram: Activo — @lacoin.music
-- CEO: OKAN — Music Company
-- Booking: +57 317 — 445 5169
+- Instagram: Activo @lacoin.music
+- CEO: OKAN Music Company
+- Booking: +57 318 680 4179
 
 **Paleta:** #C8A96E, #1A1A2E, #E8D5B7, #2D2D44, #0F0F1A, #D4AF37
 
 **Links:**
-- Spotify: LACOIN — https://open.spotify.com/intl-es/artist/4UnaLUZabfYp53ngJEu2xC?si=wZ3mzutvROm1SZwfl-wsbw
-- Instagram: @jc.lacoin — https://www.instagram.com/jc.lacoin/
-- TikTok: @versadosoficial — https://tiktok.com/@versadosoficial
-- YouTube: @Jc.Lacoin — https://www.youtube.com/@Jc.Lacoin
-- Amazon Music: LACOIN — https://music.amazon.com/artists/B0BNLQNHZZ/lacoin
-- Apple Music: LACOIN — https://music.apple.com/ec/artist/lacoin/1455403424
+- Spotify: LACOIN
+- Instagram: @jc.lacoin
+- TikTok: @versadosoficial
+- YouTube: @Jc.Lacoin
+- Amazon Music: LACOIN
+- Apple Music: LACOIN
 
-**CTA:** Escucha a LACOIN en YouTube — Dale clic y ponla a sonar 🔊
+---
 
-**Fotos:**
-- images/lacoin-01.jpg
-- images/lacoin-02.jpg
-- images/lacoin-03.jpg
-- images/lacoin-04.jpg
+## 📱 WHATSAPP
+Hola OKAN Music, me interesa conocer más sobre sus servicios y artistas.
+Número: +57 318 680 4179
+
+## 📧 EMAIL
+okanmusiccompany@gmail.com
+
+---
+
+## 🏷️ PROVIDED BY
+Innovatexweb — @innovatex_web

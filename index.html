@@ -1,6 +1,6 @@
 <html lang="es">
 <head>
-<meta charset="UTF-8">
+<meta chonset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OKAN Music Company — Press Kit 2025–26</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -155,7 +155,7 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
 .home-pk-title{font-family:'Bebas Neue',sans-serif;font-size:60px;line-height:.88;margin-bottom:6px;color:#f7f7f7}
 .home-pk-title em{color:#dbf343;font-style:normal}
 .home-pk-sub{font-size:10px;color:#ccc;letter-spacing:2px;text-transform:uppercase;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,0.05);margin-bottom:32px}
-.roster-pk{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;grid-auto-rows:1fr;max-width:1200px;margin:0 auto}
+.roster-pk{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:2px;grid-auto-rows:1fr;max-width:1200px;margin:0 auto}
 
 /* ROSTER CARD — PREMIUM REDESIGN */
 .rc{cursor:pointer;background:#1a1a1a;border:1px solid rgba(255,255,255,0.06);overflow:hidden;position:relative;transition:border-color .3s;display:flex;flex-direction:column;height:100%}
@@ -484,11 +484,11 @@ const ARTISTS = [
   },
   {
     "id":"alee",
-    "name":"ALEE",
+    "name":"Aleee",
     "alias":null,
     "genre":"Urbano · Trap · Detroit",
     "city":"Cali, Colombia",
-    "quote":"Eso es Facil!",
+    "quote":"Esto es Facil!",
     "image":"images/alee-01.jpg",
     "banner":[
       "images/alee-01.jpg",
@@ -506,7 +506,7 @@ const ARTISTS = [
       {"plat":"Facebook","num":"40","sub":"seguidores"}
     ],
     "release":{"name":"CARAMELOS","info":"Aleee, Escarria, Geanpi · Spotify"},
-    "bioShort":"Eso es Facil!",
+    "bioShort":"Esto es Facil!",
     "bioLong":[],
     "links":[
       {"plat":"Spotify","handle":"ALEE","url":"https://open.spotify.com/intl-es/artist/2wpdMMxphBwbzPB59ydfHN"},
@@ -563,7 +563,7 @@ const ARTISTS = [
     "id":"jeiry",
     "name":"JEIRY",
     "alias":"El de la Química",
-    "genre":"Tropical · Urbano",
+    "genre":"Urbano",
     "city":"Buenaventura / Cali",
     "quote":"El de la Fucking Química.",
     "image":"images/jeiry-01.jpg",
@@ -614,7 +614,7 @@ const ARTISTS = [
       {"plat":"Spotify","num":"Activo","sub":"En crecimiento"},
       {"plat":"Instagram","num":"Activo","sub":"@dolche.paramo"},
       {"plat":"TikTok","num":"Activo","sub":"@dolche.paramo"},
-      {"plat":"Manager","num":"Lacoin","sub":"OKAN Music"}
+      {"plat":"Manager","num":"Luis Castro","sub":"OKAN Music"}
     ],
     "release":{"name":"Proyecto debut 2025","info":"En desarrollo · OKAN Music"},
     "bioShort":"DOLCHE. Dancehall, Perreo y Dembow. Proyecto en desarrollo bajo OKAN Music Company.",
@@ -649,9 +649,9 @@ const ARTISTS = [
       {"plat":"Instagram","num":"50K","sub":"@wendyrow_"},
       {"plat":"Alcance","num":"101.9K","sub":"vistas / 30 días"},
       {"plat":"Posts","num":"138","sub":"publicaciones"},
-      {"plat":"Booking","num":"Lacoin","sub":"+57 317 445 5169"}
+      {"plat":"Booking","num":"Luis Castro","sub":"+57 318 680 4179"}
     ],
-"release":{"name":"Debut 2025 — La Patrona","info":"En preparación · OKAN Music"},
+"release":{"name":"Debut 2026 — La Patrona","info":"En preparación · OKAN Music"},
     "bioShort":"WENDY GUZMAN, \"La Patrona\". Música Popular y Regional Mexicano con elegancia contemporánea.",
     "bioLong":[
       "Bajo el concepto 'La Patrona', su propuesta está inspirada en mujeres que toman decisiones y construyen su futuro desde la confianza.",
@@ -814,8 +814,8 @@ function buildSelloPage(){
     </div>
     <div class="cta-contact">
       <div style="font-size:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#dbf343;margin-bottom:8px">Booking & Prensa</div>
-      <span>Lacoin</span><br>
-      <span>+57 317 445 5169</span><br>
+      <span>Luis Castro</span><br>
+      <span>+57 318 680 4179</span><br>
       <span>Cali, Colombia</span>
     </div>
   </section>
@@ -882,7 +882,7 @@ function buildArtistPage(a){
       <div class="link-dot"></div>
     </a>`).join('');
   const bioP=a.bioLong.map(p=>`<p>${p}</p>`).join('');
-const bgImage = a.image ? `background-image:url('${a.image}');background-size:contain;background-repeat:no-repeat;background-position:top center;` : `background:${a.artBg};`;
+const bgImage = a.image ? `background-image:url('${a.image}');background-size:contain;background-repeat:no-repeat;background-position:center center;` : `background:${a.artBg};`;
   const palHexList = a.pal.join(', ');
 
   // YouTube / Music CTA
@@ -952,7 +952,7 @@ const bgImage = a.image ? `background-image:url('${a.image}');background-size:co
     <div class="footer-left-group">
       <img src="images/logo.jpg" alt="OKAN" style="height:32px;width:auto;object-fit:contain">
       <div class="a-footer-brand">OKAN MUSIC COMPANY · 2025–2026</div>
-      <div class="a-footer-contact">Booking & Prensa: <span>Lacoin · +57 317 445 5169</span></div>
+      <div class="a-footer-contact">Booking & Prensa: <span>Luis Castro · +57 318 680 4179</span></div>
     </div>
     <a class="provided-by" href="https://www.instagram.com/innovatex_web/" target="_blank" rel="noreferrer" title="Desarrollado por Innovatexweb">
       <span>Provided by</span>
@@ -984,7 +984,7 @@ function buildPressKitHome(){
   pkPanel.innerHTML=`
     <div class="home-pk">
       <div class="home-pk-title">PRESS KIT<br><em>2025–26</em></div>
-      <div class="home-pk-sub">Okan Music Company · Cali, Colombia · Management & Artist Development · Booking: Lacoin +57 317 445 5169</div>
+      <div class="home-pk-sub">Okan Music Company · Cali, Colombia · Management & Artist Development · Booking: Luis Castro +57 318 680 4179</div>
     </div>
     <div class="roster-pk" id="roster-pk"></div>
   `;
@@ -1006,6 +1006,9 @@ function buildPressKitArtist(id){
     function setBanner(i){
       cur=i;
       rightEl.style.backgroundImage=`url('${a.banner[cur]}')`;
+      rightEl.style.backgroundSize='contain';
+      rightEl.style.backgroundRepeat='no-repeat';
+      rightEl.style.backgroundPosition='center center';
       if(dotsEl){
         dotsEl.querySelectorAll('.hero-dot').forEach((d,di)=>{ d.classList.toggle('active',di===cur); });
       }
@@ -1092,7 +1095,7 @@ tabsEl.addEventListener('click',e=>{
 // WHATSAPP
 document.getElementById('whatsapp-float-btn').addEventListener('click',()=>{
   const msg=encodeURIComponent('Hola OKAN Music, me interesa conocer más sobre sus servicios y artistas.');
-  window.open('https://wa.me/573174455169?text='+msg,'_blank');
+  window.open('https://wa.me/573186804179?text='+msg,'_blank');
 });
 
 // STATS SLIDER (solo en mobile)
