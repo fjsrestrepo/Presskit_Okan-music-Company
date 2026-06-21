@@ -9,9 +9,13 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "heic-convert": "^2.1.0",
     "pdf-image": "^2.0.0",
     "pdfjs-dist": "^6.0.227",
-    "sharp": "^0.35.1",
+    "sharp": "^0.35.2",
     "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "heic-decode": "^2.1.0"
   }
 }

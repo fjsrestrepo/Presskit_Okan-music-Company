@@ -147,6 +147,48 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
 .footer{padding:40px 48px 80px;border-top:1px solid rgba(255,255,255,0.06);display:flex;justify-content:space-between;align-items:center;gap:16px}
 .footer-brand{font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:3px;color:rgba(247,247,247,.2)}
 .footer-tagline{font-size:11px;color:#ccc;font-style:italic}
+.footer-admin-hint{font-size:9px;color:rgba(255,255,255,0.08);cursor:default;user-select:none;transition:color .3s}
+.footer-admin-hint:hover{color:rgba(255,255,255,0.15)}
+
+/* ── ADMIN PANEL OVERLAY ── */
+.admin-overlay{position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.88);display:none;flex-direction:column;backdrop-filter:blur(12px)}
+.admin-overlay.open{display:flex}
+.admin-header{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;border-bottom:1px solid rgba(255,255,255,0.08);flex-shrink:0}
+.admin-title{font-family:'Bebas Neue',sans-serif;font-size:32px;color:#dbf343;letter-spacing:1px}
+.admin-close{background:transparent;border:1px solid rgba(255,255,255,0.15);color:#f7f7f7;width:36px;height:36px;border-radius:50%;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s}
+.admin-close:hover{border-color:#dbf343;color:#dbf343}
+.admin-body{flex:1;overflow-y:auto;padding:24px 28px}
+.admin-artist-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px}
+.admin-artist-item{display:flex;align-items:center;gap:12px;padding:12px 16px;background:#1a1a1a;border:1px solid rgba(255,255,255,0.06);border-radius:4px;cursor:pointer;transition:all .15s;user-select:none}
+.admin-artist-item:hover{border-color:rgba(219,243,67,.3)}
+.admin-artist-item.selected{background:rgba(219,243,67,.06);border-color:rgba(219,243,67,.4)}
+.admin-artist-item input[type=checkbox]{display:none}
+.admin-checkbox{width:20px;height:20px;border-radius:3px;border:2px solid rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .15s;font-size:12px;color:transparent}
+.admin-artist-item.selected .admin-checkbox{background:#dbf343;border-color:#dbf343;color:#111010}
+.admin-artist-avatar{width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0;background:#111010}
+.admin-artist-info{flex:1;min-width:0}
+.admin-artist-name{font-family:'Bebas Neue',sans-serif;font-size:18px;color:#f7f7f7;line-height:1.1}
+.admin-artist-genre{font-size:9px;color:#ccc;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.admin-artist-stats{font-size:9px;color:#dbf343;margin-top:2px}
+.admin-footer{padding:16px 28px;border-top:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;gap:12px;flex-wrap:wrap;flex-shrink:0}
+.admin-select-all{background:transparent;border:1px solid rgba(255,255,255,0.15);color:#ccc;padding:10px 20px;border-radius:4px;font-size:11px;font-weight:600;cursor:pointer;letter-spacing:.5px;font-family:'Inter',sans-serif;transition:all .15s}
+.admin-select-all:hover{border-color:#dbf343;color:#dbf343}
+.admin-counter{font-size:12px;color:#ccc;margin-left:auto}
+.admin-counter strong{color:#dbf343}
+.admin-btn-email{background:#dbf343;color:#111010;border:none;padding:12px 24px;font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border-radius:4px;font-family:'Inter',sans-serif;transition:all .2s}
+.admin-btn-email:hover{background:#e8f95a;transform:translateY(-1px)}
+.admin-btn-copy{background:transparent;color:#f7f7f7;border:1px solid rgba(255,255,255,0.2);padding:12px 24px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border-radius:4px;font-family:'Inter',sans-serif;transition:all .2s}
+.admin-btn-copy:hover{border-color:#dbf343;color:#dbf343}
+.admin-toast{position:fixed;bottom:30px;left:50%;transform:translateX(-50%);z-index:99999;background:#dbf343;color:#111010;padding:10px 24px;border-radius:4px;font-size:12px;font-weight:700;letter-spacing:.5px;opacity:0;transition:opacity .3s;pointer-events:none;font-family:'Inter',sans-serif}
+.admin-toast.show{opacity:1}
+@media(max-width:600px){
+  .admin-header{padding:14px 16px}
+  .admin-title{font-size:24px}
+  .admin-body{padding:16px}
+  .admin-artist-list{grid-template-columns:1fr}
+  .admin-footer{padding:12px 16px;gap:8px}
+  .admin-btn-email,.admin-btn-copy{padding:10px 16px;font-size:10px}
+}
 
 /* ═══════════════════════════════════════
    PRESS KIT (artistas)
@@ -393,6 +435,27 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
   </svg>
 </a>
 
+<!-- ═══════════════════════════════════
+   ADMIN OVERLAY
+═══════════════════════════════════ -->
+<div class="admin-overlay" id="admin-overlay">
+  <div class="admin-header">
+    <div class="admin-title">ADMIN · ENVIAR PRESS KIT</div>
+    <button class="admin-close" id="admin-close" title="Cerrar (Esc)">✕</button>
+  </div>
+  <div class="admin-body">
+    <p style="font-size:11px;color:#ccc;margin-bottom:20px;line-height:1.6">Selecciona los artistas que deseas incluir en el envío. Usa los botones inferiores para <strong style="color:#dbf343">enviar por Email</strong> o <strong style="color:#dbf343">copiar al portapapeles</strong>.</p>
+    <div class="admin-artist-list" id="admin-artist-list"></div>
+  </div>
+  <div class="admin-footer">
+    <button class="admin-select-all" id="admin-select-all">Seleccionar todos</button>
+    <span class="admin-counter" id="admin-counter">0 de <strong>0</strong> seleccionados</span>
+    <button class="admin-btn-email" id="admin-btn-email" disabled>📧 Enviar por Email</button>
+    <button class="admin-btn-copy" id="admin-btn-copy" disabled>📋 Copiar al Portapapeles</button>
+  </div>
+</div>
+<div class="admin-toast" id="admin-toast"></div>
+
 <script>
 /* ═══════════════════════════════════
    DATA
@@ -471,7 +534,7 @@ const ARTISTS = [
     "bioShort":"Luis08, \"El Humildoso\". Dancehall, Perreo y Dembow desde Cali, Colombia.",
     "bioLong":[
       "Su esencia no es ostentación sino identificación. El público ve en él a alguien que entiende su realidad y comparte sus mismos códigos culturales.",
-      "Inspirado en Ryan Castro: carrera donde el artista es parte de la comunidad.",
+      "Inspirado en Mozart La Para: carrera donde el artista es parte de la comunidad.",
       "Concepto audiovisual: exteriores orgánicos, bocinas de colores, ambiente de barrio vivo, streetwear auténtico."
     ],
     "links":[
@@ -614,10 +677,10 @@ const ARTISTS = [
     "pal":["#c8e03a","#f5f0e8","#2a2a18","#4a5a20","#1a1a0a","#888860"],
     "artBg":"linear-gradient(155deg,#080d04 0%,#0d1408 50%,#101808 100%)",
     "stats":[
-      {"plat":"Spotify","num":"Activo","sub":"En crecimiento"},
-      {"plat":"Instagram","num":"Activo","sub":"@dolche.paramo"},
-      {"plat":"TikTok","num":"Activo","sub":"@dolche.paramo"},
-      {"plat":"Manager","num":"OKAN","sub":"Music Company"}
+      {"plat":"Spotify","num":"3.339","sub":"reproducciones"},
+      {"plat":"Instagram","num":"1.258","sub":"seguidores"},
+      {"plat":"Publicaciones","num":"135","sub":"posts"},
+      {"plat":"Seguidos","num":"1.623","sub":"following"}
     ],
     "release":{"name":"Proyecto debut 2025","info":"En desarrollo · OKAN Music"},
     "bioShort":"DOLCHE. Dancehall, Perreo y Dembow. Proyecto en desarrollo bajo OKAN Music Company.",
@@ -684,10 +747,10 @@ const ARTISTS = [
     "pal":["#C8A96E","#1A1A2E","#E8D5B7","#2D2D44","#0F0F1A","#D4AF37"],
     "artBg":"linear-gradient(155deg,#0a0808 0%,#140d10 50%,#1a1018 100%)",
     "stats":[
-      {"plat":"Spotify","num":"Activo","sub":"En crecimiento"},
-      {"plat":"Instagram","num":"Activo","sub":"@lacoin.music"},
-      {"plat":"CEO","num":"OKAN","sub":"Music Company"},
-      {"plat":"Booking","num":"+57 317","sub":"445 5169"}
+      {"plat":"Spotify","num":"168.990","sub":"reproducciones"},
+      {"plat":"Instagram","num":"235K","sub":"seguidores"},
+      {"plat":"Publicaciones","num":"10","sub":"posts"},
+      {"plat":"Seguidos","num":"1.516","sub":"following"}
     ],
     "release":{"name":"Debut 2025–26","info":"En preparación · OKAN Music"},
     "bioShort":"LACOIN — Artista, compositor y performer. Dancehall romántico, Afrobeat, R&B y Trap desde Cali.",
@@ -707,6 +770,47 @@ const ARTISTS = [
       {"plat":"Apple Music","handle":"LACOIN","url":"https://music.apple.com/ec/artist/lacoin/1455403424"}
     ],
     "youtubeUrl":"https://www.youtube.com/@Jc.Lacoin"
+  },
+  {
+    "id":"onlydre",
+    "name":"ONLY DRE",
+    "alias":"El Mystico",
+    "genre":"Trap · Detroit · Urbano",
+    "city":"Cali, Colombia",
+    "quote":"El Mystiko.",
+    "image":"images/onlydre-cover.jpg",
+    "banner":[
+      "images/onlydre-cover.jpg",
+      "images/onlydre-02.jpg",
+      "images/onlydre-03.jpg",
+      "images/onlydre-04.jpg",
+      "images/onlydre-05.jpg",
+      "images/onlydre-06.jpg",
+      "images/onlydre-07.jpg"
+    ],
+    "pal":["#3D1A5C","#6B3FA0","#B79DDA","#C8C8D4","#110F14","#ffffff"],
+    "artBg":"linear-gradient(155deg,#0a080f 0%,#120d1a 50%,#1a1025 100%)",
+    "stats":[
+      {"plat":"Instagram","num":"337","sub":"seguidores"},
+      {"plat":"Publicaciones","num":"5","sub":"posts"},
+      {"plat":"Seguidos","num":"302","sub":"following"},
+      {"plat":"Spotify","num":"Activo","sub":"En crecimiento"}
+    ],
+    "release":{"name":"Próximo lanzamiento 2025-26","info":"En preparación · OKAN Music"},
+    "bioShort":"ONLY DRE es un artista, compositor y performer colombiano que fusiona Trap, Detroit y Urbano con una estética cinematográfica única.",
+    "bioLong":[
+      "Hay una cámara encendida. No siempre apunta al mismo hombre. ONLY DRE nace de una idea simple: todos tenemos dos versiones de nosotros mismos. La que observa y la que siente. La que guarda silencio y la que necesita decir lo que lleva adentro.",
+      "\"Only\" es la parte que construye universos, cuida los detalles y convierte cada imagen en una escena. \"Dre\" es la parte humana: cercana, emocional y conectada con su gente.",
+      "Su propuesta mezcla música, estética cinematográfica y una identidad visual marcada por contrastes, siluetas, luces moradas y espacios donde el misterio importa tanto como la canción. ONLY DRE no busca mostrarlo todo. Prefiere dejar algo sin contar."
+    ],
+    "links":[
+      {"plat":"Spotify","handle":"ONLY DRE","url":"https://open.spotify.com/artist/1l1hI31AaAbvTR6ZtV4u9T?si=iS2o8l2cQ4SybFJwUk67-Q"},
+      {"plat":"Instagram","handle":"@only_dre___","url":"https://www.instagram.com/only_dre___?utm_source=qr"},
+      {"plat":"TikTok","handle":"@only_dre_","url":"https://www.tiktok.com/@only_dre_?_r=1&_t=ZS-97NDNx6X9NP"},
+      {"plat":"YouTube","handle":"@ONLYDRE-23","url":"https://youtube.com/@onlydre-23?si=NhghkxtShLgJmU7m"},
+      {"plat":"Apple Music","handle":"ONLYDRE","url":"https://music.apple.com/co/artist/onlydre/16113"}
+    ],
+    "youtubeUrl":"https://youtube.com/@onlydre-23?si=NhghkxtShLgJmU7m"
   }
 ];
 
@@ -1121,6 +1225,268 @@ function initStatsSlider(){
 fillSelloRoster();
 
 setTimeout(initStatsSlider,100);
+
+/* ═══════════════════════════════════
+   ADMIN PANEL LOGIC
+═══════════════════════════════════ */
+const adminOverlay = document.getElementById('admin-overlay');
+const adminClose = document.getElementById('admin-close');
+const adminList = document.getElementById('admin-artist-list');
+const adminCounter = document.getElementById('admin-counter');
+const adminSelectAll = document.getElementById('admin-select-all');
+const adminBtnEmail = document.getElementById('admin-btn-email');
+const adminBtnCopy = document.getElementById('admin-btn-copy');
+const adminToast = document.getElementById('admin-toast');
+
+let adminSelected = new Set();
+let adminAllSelected = false;
+
+function initAdminPanel() {
+  adminList.innerHTML = '';
+  adminSelected.clear();
+  adminAllSelected = false;
+  adminSelectAll.textContent = 'Seleccionar todos';
+
+  ARTISTS.forEach((a, i) => {
+    const div = document.createElement('div');
+    div.className = 'admin-artist-item';
+    div.dataset.id = a.id;
+    div.innerHTML = `
+      <div class="admin-checkbox">✓</div>
+      <img class="admin-artist-avatar" src="${a.image}" alt="${a.name}" onerror="this.style.display='none'">
+      <div class="admin-artist-info">
+        <div class="admin-artist-name">${a.name}</div>
+        <div class="admin-artist-genre">${a.genre}</div>
+        <div class="admin-artist-stats">${a.city} · ${a.stats[0] ? a.stats[0].plat + ': ' + a.stats[0].num : ''}</div>
+      </div>
+    `;
+    const cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.checked = false;
+    div.appendChild(cb);
+
+    div.addEventListener('click', (e) => {
+      e.preventDefault();
+      toggleArtist(a.id, div);
+    });
+
+    adminList.appendChild(div);
+  });
+
+  updateAdminUI();
+}
+
+function toggleArtist(id, el) {
+  if (adminSelected.has(id)) {
+    adminSelected.delete(id);
+    el.classList.remove('selected');
+    el.querySelector('input[type=checkbox]').checked = false;
+  } else {
+    adminSelected.add(id);
+    el.classList.add('selected');
+    el.querySelector('input[type=checkbox]').checked = true;
+  }
+  adminAllSelected = adminSelected.size === ARTISTS.length;
+  adminSelectAll.textContent = adminAllSelected ? 'Deseleccionar todos' : 'Seleccionar todos';
+  updateAdminUI();
+}
+
+function updateAdminUI() {
+  const count = adminSelected.size;
+  const total = ARTISTS.length;
+  adminCounter.innerHTML = `${count} de <strong>${total}</strong> seleccionados`;
+  adminBtnEmail.disabled = count === 0;
+  adminBtnCopy.disabled = count === 0;
+}
+
+function buildPressKitText(artists) {
+  const lines = [];
+  lines.push('═══════════════════════════════════');
+  lines.push('  OKAN MUSIC COMPANY — PRESS KIT 2025-26');
+  lines.push('  Cali, Colombia · Management & Artist Development');
+  lines.push('  Booking: +57 318 680 4179');
+  lines.push('  Email: okanmusiccompany@gmail.com');
+  lines.push('═══════════════════════════════════');
+  lines.push('');
+
+  artists.forEach((a, idx) => {
+    lines.push('━━━━━━━━━━━━━━━━━━━━━━━━');
+    lines.push(`  ${String(idx + 1).padStart(2, '0')}. ${a.name}${a.alias ? ' — "' + a.alias + '"' : ''}`);
+    lines.push('━━━━━━━━━━━━━━━━━━━━━━━━');
+    lines.push(`  Género: ${a.genre}`);
+    lines.push(`  Ciudad: ${a.city}`);
+    lines.push(`  Quote: "${a.quote}"`);
+    lines.push('');
+    lines.push(`  Bio: ${a.bioShort}`);
+    if (a.bioLong && a.bioLong.length > 0) {
+      a.bioLong.forEach(p => lines.push(`    • ${p}`));
+    }
+    lines.push('');
+    lines.push(`  Último lanzamiento: ${a.release.name}`);
+    lines.push(`  ${a.release.info}`);
+    lines.push('');
+    lines.push('  Stats:');
+    a.stats.forEach(s => lines.push(`    ${s.plat}: ${s.num} ${s.sub}`));
+    lines.push('');
+    lines.push('  Paleta: ' + a.pal.join(', '));
+    lines.push('');
+    lines.push('  Links:');
+    a.links.forEach(l => lines.push(`    ${l.plat}: ${l.handle} — ${l.url}`));
+    lines.push('');
+  });
+
+  lines.push('═══════════════════════════════════');
+  lines.push('  OKAN MUSIC COMPANY');
+  lines.push('  Si toca el corazón, es OKAN.');
+  lines.push('═══════════════════════════════════');
+
+  return lines.join('\n');
+}
+
+function getSelectedArtists() {
+  return ARTISTS.filter(a => adminSelected.has(a.id));
+}
+
+function showToast(msg, duration = 2800) {
+  adminToast.textContent = msg;
+  adminToast.classList.add('show');
+  clearTimeout(adminToast._timeout);
+  adminToast._timeout = setTimeout(() => adminToast.classList.remove('show'), duration);
+}
+
+adminBtnEmail.addEventListener('click', () => {
+  const selected = getSelectedArtists();
+  if (selected.length === 0) return;
+
+  const subject = selected.length === ARTISTS.length
+    ? 'OKAN Music Company — Press Kit Completo 2025-26'
+    : `OKAN Music Company — Press Kit: ${selected.map(a => a.name).join(', ')}`;
+
+  const body = `Hola,
+
+Adjunto el Press Kit de OKAN Music Company con la información de ${selected.length === ARTISTS.length ? 'todos los artistas' : (selected.length === 1 ? 'el artista seleccionado' : 'los artistas seleccionados')}:
+
+${buildPressKitText(selected)}
+
+--
+OKAN Music Company
+okanmusiccompany@gmail.com
++57 318 680 4179
+Cali, Colombia`;
+
+  const mailto = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.open(mailto, '_blank');
+  showToast(`📧 Email preparado con ${selected.length} artista(s)`);
+});
+
+adminBtnCopy.addEventListener('click', () => {
+  const selected = getSelectedArtists();
+  if (selected.length === 0) return;
+
+  const text = buildPressKitText(selected);
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(() => {
+      showToast(`📋 Copiado al portapapeles — ${selected.length} artista(s) listos para pegar`);
+    }).catch(() => {
+      fallbackCopy(text);
+    });
+  } else {
+    fallbackCopy(text);
+  }
+});
+
+function fallbackCopy(text) {
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  ta.style.top = '-9999px';
+  document.body.appendChild(ta);
+  ta.focus();
+  ta.select();
+  try {
+    document.execCommand('copy');
+    showToast(`📋 Copiado al portapapeles — Usa Ctrl+V para pegar`);
+  } catch (e) {
+    showToast('⚠️ No se pudo copiar. Intenta de nuevo.');
+  }
+  document.body.removeChild(ta);
+}
+
+adminSelectAll.addEventListener('click', () => {
+  if (adminAllSelected) {
+    // Deselect all
+    adminSelected.clear();
+    adminAllSelected = false;
+    adminSelectAll.textContent = 'Seleccionar todos';
+    adminList.querySelectorAll('.admin-artist-item').forEach(el => {
+      el.classList.remove('selected');
+      el.querySelector('input[type=checkbox]').checked = false;
+    });
+  } else {
+    // Select all
+    ARTISTS.forEach(a => adminSelected.add(a.id));
+    adminAllSelected = true;
+    adminSelectAll.textContent = 'Deseleccionar todos';
+    adminList.querySelectorAll('.admin-artist-item').forEach(el => {
+      el.classList.add('selected');
+      el.querySelector('input[type=checkbox]').checked = true;
+    });
+  }
+  updateAdminUI();
+});
+
+adminClose.addEventListener('click', closeAdmin);
+adminOverlay.addEventListener('click', (e) => {
+  if (e.target === adminOverlay) closeAdmin();
+});
+
+function closeAdmin() {
+  adminOverlay.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function openAdmin() {
+  initAdminPanel();
+  adminOverlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  adminClose.focus();
+}
+
+// Tecla Escape para cerrar
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && adminOverlay.classList.contains('open')) {
+    closeAdmin();
+  }
+  // Ctrl+Shift+A para abrir
+  if (e.ctrlKey && e.shiftKey && e.key === 'A') {
+    e.preventDefault();
+    openAdmin();
+  }
+});
+
+// Triple clic en el footer para abrir (alternativa secreta)
+let footerClickCount = 0;
+let footerClickTimer = null;
+document.addEventListener('DOMContentLoaded', () => {
+  const footer = document.querySelector('.footer');
+  if (footer) {
+    footer.addEventListener('click', (e) => {
+      // Solo el área del footer (no los enlaces dentro de él)
+      if (e.target.closest('a') || e.target.closest('button')) return;
+      footerClickCount++;
+      if (footerClickCount === 1) {
+        footerClickTimer = setTimeout(() => { footerClickCount = 0; }, 800);
+      }
+      if (footerClickCount >= 3) {
+        clearTimeout(footerClickTimer);
+        footerClickCount = 0;
+        openAdmin();
+      }
+    });
+  }
+});
 </script>
 </body>
 </html>
