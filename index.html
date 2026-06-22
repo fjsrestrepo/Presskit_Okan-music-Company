@@ -175,10 +175,10 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
 .admin-select-all:hover{border-color:#dbf343;color:#dbf343}
 .admin-counter{font-size:12px;color:#ccc;margin-left:auto}
 .admin-counter strong{color:#dbf343}
-.admin-btn-email{background:#dbf343;color:#111010;border:none;padding:12px 24px;font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border-radius:4px;font-family:'Inter',sans-serif;transition:all .2s}
-.admin-btn-email:hover{background:#e8f95a;transform:translateY(-1px)}
-.admin-btn-copy{background:transparent;color:#f7f7f7;border:1px solid rgba(255,255,255,0.2);padding:12px 24px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border-radius:4px;font-family:'Inter',sans-serif;transition:all .2s}
-.admin-btn-copy:hover{border-color:#dbf343;color:#dbf343}
+.admin-btn-pdf{background:#dbf343;color:#111010;border:none;padding:12px 24px;font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border-radius:4px;font-family:'Inter',sans-serif;transition:all .2s}
+.admin-btn-pdf:hover{background:#e8f95a;transform:translateY(-1px)}
+.admin-btn-link{background:transparent;color:#f7f7f7;border:1px solid rgba(255,255,255,0.2);padding:12px 24px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border-radius:4px;font-family:'Inter',sans-serif;transition:all .2s}
+.admin-btn-link:hover{border-color:#dbf343;color:#dbf343}
 .admin-toast{position:fixed;bottom:30px;left:50%;transform:translateX(-50%);z-index:99999;background:#dbf343;color:#111010;padding:10px 24px;border-radius:4px;font-size:12px;font-weight:700;letter-spacing:.5px;opacity:0;transition:opacity .3s;pointer-events:none;font-family:'Inter',sans-serif}
 .admin-toast.show{opacity:1}
 @media(max-width:600px){
@@ -444,14 +444,14 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
     <button class="admin-close" id="admin-close" title="Cerrar (Esc)">✕</button>
   </div>
   <div class="admin-body">
-    <p style="font-size:11px;color:#ccc;margin-bottom:20px;line-height:1.6">Selecciona los artistas que deseas incluir en el envío. Usa los botones inferiores para <strong style="color:#dbf343">enviar por Email</strong> o <strong style="color:#dbf343">copiar al portapapeles</strong>.</p>
+    <p style="font-size:11px;color:#ccc;margin-bottom:20px;line-height:1.6">Selecciona los artistas que deseas incluir. Usa los botones inferiores para <strong style="color:#dbf343">descargar en PDF</strong> o <strong style="color:#dbf343">copiar link del perfil</strong>.</p>
     <div class="admin-artist-list" id="admin-artist-list"></div>
   </div>
   <div class="admin-footer">
     <button class="admin-select-all" id="admin-select-all">Seleccionar todos</button>
     <span class="admin-counter" id="admin-counter">0 de <strong>0</strong> seleccionados</span>
-    <button class="admin-btn-email" id="admin-btn-email" disabled>📧 Enviar por Email</button>
-    <button class="admin-btn-copy" id="admin-btn-copy" disabled>📋 Copiar al Portapapeles</button>
+    <button class="admin-btn-pdf" id="admin-btn-pdf" disabled>�️ Descargar PDF</button>
+    <button class="admin-btn-link" id="admin-btn-link" disabled>� Copiar Link</button>
   </div>
 </div>
 <div class="admin-toast" id="admin-toast"></div>
@@ -1201,7 +1201,7 @@ tabsEl.addEventListener('click',e=>{
 // WHATSAPP
 document.getElementById('whatsapp-float-btn').addEventListener('click',()=>{
   const msg=encodeURIComponent('Hola OKAN Music, me interesa conocer más sobre sus servicios y artistas.');
-  window.open('https://wa.me/573186804179?text='+msg,'_blank');
+  window.open('https://wa.me/573234923153?text='+msg,'_blank');
 });
 
 // STATS SLIDER (solo en mobile)
