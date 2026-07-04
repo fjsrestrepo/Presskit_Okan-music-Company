@@ -12,12 +12,12 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
 /* NAV */
 .nav{position:sticky;top:0;z-index:200;background:rgba(17,16,16,0.97);border-bottom:1px solid rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:space-between;padding:10px 20px;gap:14px;backdrop-filter:blur(16px)}
 .nav-logo{display:flex;align-items:center;gap:10px;font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:3px;color:#f7f7f7;flex-shrink:0;cursor:pointer;text-decoration:none}
-.nav-logo img{height:32px;width:auto;object-fit:contain}
+.nav-logo img{height:256px;width:auto;object-fit:contain}
 .nav-logo span{color:#dbf343}
 .logo-img{height:auto;max-width:100%;display:block;object-fit:contain}
 .nav-tabs{display:flex;gap:3px;overflow-x:auto;scrollbar-width:none}
 .nav-tabs::-webkit-scrollbar{display:none}
-.tab{background:transparent;border:1px solid rgba(255,255,255,0.1);color:#f7f7f7;padding:5px 11px;border-radius:20px;font-size:9px;font-weight:700;cursor:pointer;white-space:nowrap;letter-spacing:1px;text-transform:uppercase;transition:all .15s;font-family:'Inter',sans-serif}
+.tab{background:transparent;border:1px solid rgba(255,255,255,0.1);color:#f7f7f7;padding:12px 28px;border-radius:24px;font-size:14px;font-weight:800;cursor:pointer;white-space:nowrap;letter-spacing:2px;text-transform:uppercase;transition:all .15s;font-family:'Inter',sans-serif}
 .tab:hover{border-color:#dbf343;color:#dbf343}
 .tab.active{background:#dbf343;border-color:#dbf343;color:#111010}
 
@@ -38,9 +38,9 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
 .hero-logo{max-width:100%;width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 0 40px rgba(219,243,67,0.08));opacity:0.95;transition:all .4s}
 .hero-logo:hover{opacity:1;filter:drop-shadow(0 0 60px rgba(219,243,67,0.15))}
 .hero-eyebrow{font-size:10px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#dbf343;margin-bottom:28px}
-.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(54px,7vw,100px);line-height:.88;color:#f7f7f7;letter-spacing:-2px;margin-bottom:32px}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(54px,7vw,100px);line-height:.88;color:#f7f7f7;letter-spacing:32px;margin-bottom:32px}
 .hero-title em{color:#dbf343;font-style:normal}
-.hero-tagline{font-size:clamp(11px,1.4vw,14px);color:#ccc;line-height:1.8;max-width:600px;margin-bottom:48px;font-weight:300;text-align:justify}
+.hero-tagline{font-size:18px;color:#ccc;line-height:1.65;max-width:800px;margin-bottom:48px;font-weight:300;text-align:justify}
 .hero-tagline strong{color:#f7f7f7;font-weight:500}
 .hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
 .btn-primary{background:#dbf343;color:#111010;border:none;padding:14px 32px;font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;cursor:pointer;border-radius:2px;font-family:'Inter',sans-serif;transition:all .2s}
@@ -68,17 +68,17 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
 /* MANIFESTO STRIP */
 .manifesto-strip{padding:80px 48px;border-bottom:1px solid rgba(255,255,255,0.06);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
 .manifesto-label{font-size:9px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#dbf343;margin-bottom:24px}
-.manifesto-text{font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,4vw,56px);line-height:1.05;color:#f7f7f7}
+.manifesto-text{font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,4vw,56px);line-height:1.05;color:#f7f7f7;letter-spacing:22px}
 .manifesto-text em{color:#dbf343;font-style:normal}
-.manifesto-body p{font-size:14px;line-height:1.85;color:#ccc;margin-bottom:16px;text-align:justify}
+.manifesto-body p{font-size:15px;line-height:1.7;color:#ccc;margin-bottom:16px;text-align:justify}
 .manifesto-body p strong{color:#f7f7f7;font-weight:500}
-.manifesto-tagline{font-family:'Bebas Neue',sans-serif;font-size:22px;color:#dbf343;margin-top:32px;letter-spacing:.5px}
+.manifesto-tagline{font-family:'Bebas Neue',sans-serif;font-size:22px;color:#dbf343;margin-top:32px;letter-spacing:3px}
 
 /* PILLARS */
 .pillars{padding:80px 48px;border-bottom:1px solid rgba(255,255,255,0.06)}
 .section-header{margin-bottom:56px}
 .section-eyebrow{font-size:9px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#dbf343;margin-bottom:16px}
-.section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,5vw,72px);line-height:.9;color:#f7f7f7}
+.section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,5vw,72px);line-height:.9;color:#f7f7f7;letter-spacing:28px}
 .pillars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
 .pillar-card{background:#1a1a1a;border:1px solid rgba(255,255,255,0.05);padding:40px 36px;position:relative;overflow:hidden;transition:border-color .2s}
 .pillar-card:hover{border-color:rgba(104,11,214,.3)}
@@ -86,8 +86,8 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
 .pillar-card:hover::before{transform:scaleY(1)}
 .pillar-num{font-family:'Bebas Neue',sans-serif;font-size:80px;color:rgba(219,243,67,0.05);line-height:1;position:absolute;top:20px;right:24px}
 .pillar-tag{font-size:8px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#dbf343;margin-bottom:16px}
-.pillar-name{font-family:'Bebas Neue',sans-serif;font-size:36px;color:#f7f7f7;line-height:1;margin-bottom:16px}
-.pillar-desc{font-size:13px;line-height:1.75;color:#ccc;text-align:justify}
+.pillar-name{font-family:'Bebas Neue',sans-serif;font-size:36px;color:#f7f7f7;line-height:1;margin-bottom:16px;letter-spacing:12px}
+.pillar-desc{font-size:14px;line-height:1.7;color:#ccc;text-align:justify}
 
 /* VALUE PROPS */
 .value-props{padding:80px 48px;border-bottom:1px solid rgba(255,255,255,0.06);background:linear-gradient(180deg,#111010 0%,#161616 100%)}
@@ -95,8 +95,8 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
 .vp-item{position:relative;overflow:hidden;padding:36px;background:#1a1a1a;border:3px solid rgba(255,255,255,0.05);border-radius:8px;transition:border-color .3s}
 .vp-item:hover{border-color:rgba(219,243,67,.3)}
 .vp-num{font-family:'Bebas Neue',sans-serif;font-size:80px;color:rgba(219,243,67,0.06);line-height:1;margin-bottom:4px;position:absolute;top:20px;right:24px}
-.vp-title{font-family:'Bebas Neue',sans-serif;font-size:26px;color:#f7f7f7;margin-bottom:10px;letter-spacing:.5px}
-.vp-text{font-size:13px;line-height:1.75;color:#ccc;text-align:justify}
+.vp-title{font-family:'Bebas Neue',sans-serif;font-size:26px;color:#f7f7f7;margin-bottom:10px;letter-spacing:12px}
+.vp-text{font-size:14px;line-height:1.7;color:#ccc;text-align:justify}
 .vp-text strong{color:#dbf343;font-weight:600}
 
 /* IMPACT / SOCIAL */
@@ -105,7 +105,7 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
 .impact-card{padding:36px;border-top:2px solid #dbf343}
 .impact-num{font-family:'Bebas Neue',sans-serif;font-size:52px;color:#dbf343;line-height:1;margin-bottom:8px}
 .impact-label{font-size:12px;font-weight:600;color:#f7f7f7;margin-bottom:8px;letter-spacing:.5px}
-.impact-desc{font-size:12px;line-height:1.7;color:#ccc;text-align:justify}
+.impact-desc{font-size:13px;line-height:1.65;color:#ccc;text-align:justify}
 
 /* ROSTER PREVIEW */
 .roster-section{padding:80px 48px;border-bottom:1px solid rgba(255,255,255,0.06)}
@@ -114,13 +114,13 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
 /* WHAT WE DO (SERVICES LIST) */
 .what-we-do{padding:80px 48px;border-bottom:1px solid rgba(255,255,255,0.06)}
 .services-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
-.svc-tag{padding:12px 24px;background:#1a1a1a;border:1px solid rgba(255,255,255,0.08);border-radius:2px;font-size:11px;font-weight:600;color:#f7f7f7;letter-spacing:0.5px;transition:all .2s}
+.svc-tag{padding:14px 28px;background:#1a1a1a;border:1px solid rgba(255,255,255,0.08);border-radius:2px;font-size:13px;font-weight:600;color:#f7f7f7;letter-spacing:1px;transition:all .2s}
 .svc-tag:hover{border-color:#dbf343;color:#dbf343;transform:translateY(-2px);box-shadow:0 4px 12px rgba(219,243,67,.08)}
 
 /* ROSTER DESCRIPTIONS */
 .roster-desc{padding:20px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
 .roster-desc-name{font-family:'Bebas Neue',sans-serif;font-size:28px;color:#f7f7f7;margin-bottom:6px;line-height:1}
-.roster-desc-text{font-size:13px;color:#ccc;line-height:1.75;text-align:justify}
+.roster-desc-text{font-size:14px;color:#ccc;line-height:1.7;text-align:justify}
 
 /* SERVICES */
 .services{padding:80px 48px;border-bottom:1px solid rgba(255,255,255,0.06)}
@@ -128,18 +128,18 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
 .svc-card{background:#1a1a1a;border:1px solid rgba(255,255,255,0.05);padding:36px;transition:border-color .2s}
 .svc-card:hover{border-color:rgba(104,11,214,.3)}
 .svc-tier{font-size:8px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#dbf343;margin-bottom:12px}
-.svc-name{font-family:'Bebas Neue',sans-serif;font-size:30px;color:#f7f7f7;margin-bottom:10px}
+.svc-name{font-family:'Bebas Neue',sans-serif;font-size:30px;color:#f7f7f7;margin-bottom:10px;letter-spacing:5px}
 .svc-price{font-size:13px;color:#f7f7f7;margin-bottom:18px}
 .svc-list{list-style:none}
-.svc-list li{font-size:12px;color:#ccc;line-height:1.6;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.04);display:flex;gap:10px;text-align:justify}
+.svc-list li{font-size:14px;color:#ccc;line-height:1.65;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.04);display:flex;gap:10px;text-align:justify}
 .svc-list li::before{content:'→';color:#dbf343;flex-shrink:0}
 
 /* CLOSING CTA */
 .cta-section{padding:120px 48px;text-align:center;background:linear-gradient(160deg,#111010 0%,#141214 100%);position:relative;overflow:hidden}
 .cta-section::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;background:radial-gradient(circle,rgba(104,11,214,0.04) 0%,transparent 70%);pointer-events:none}
 .cta-label{font-size:9px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#dbf343;margin-bottom:24px}
-.cta-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(48px,7vw,100px);line-height:.9;color:#f7f7f7;margin-bottom:24px}
-.cta-sub{font-size:15px;color:#ccc;max-width:520px;margin:0 auto 48px;line-height:1.7;text-align:justify}
+.cta-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(48px,7vw,100px);line-height:.9;color:#f7f7f7;margin-bottom:24px;letter-spacing:28px}
+.cta-sub{font-size:18px;color:#ccc;max-width:700px;margin:0 auto 48px;line-height:1.7;text-align:justify}
 .cta-contact{font-size:11px;color:#f7f7f7;margin-top:40px;letter-spacing:1px}
 .cta-contact span{color:#dbf343}
 
@@ -194,9 +194,9 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
    PRESS KIT (artistas)
 ═══════════════════════════════════════ */
 .home-pk{padding:44px 32px}
-.home-pk-title{font-family:'Bebas Neue',sans-serif;font-size:60px;line-height:.88;margin-bottom:6px;color:#f7f7f7}
+.home-pk-title{font-family:'Bebas Neue',sans-serif;font-size:60px;line-height:.88;margin-bottom:6px;color:#f7f7f7;letter-spacing:24px}
 .home-pk-title em{color:#dbf343;font-style:normal}
-.home-pk-sub{font-size:10px;color:#ccc;letter-spacing:2px;text-transform:uppercase;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,0.05);margin-bottom:32px}
+.home-pk-sub{font-size:11px;color:#ccc;letter-spacing:2px;text-transform:uppercase;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,0.05);margin-bottom:32px}
 .roster-pk{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;grid-auto-rows:1fr;max-width:1100px;margin:0 auto}
 
 /* ROSTER CARD — PREMIUM REDESIGN */
@@ -212,7 +212,7 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
 .rc-genre{font-family:'Inter',sans-serif;font-size:8px;font-weight:600;letter-spacing:0.5px;color:rgba(219,243,67,.6);text-transform:uppercase;margin-left:6px;vertical-align:middle}
 .rc-body{padding:14px 18px 20px;flex:1;display:flex;flex-direction:column}
 .rc-num{font-family:'Bebas Neue',sans-serif;font-size:10px;letter-spacing:2px;margin-bottom:3px;color:#dbf343;flex-shrink:0}
-.rc-name{font-family:'Bebas Neue',sans-serif;font-size:32px;line-height:1;color:#f7f7f7;flex-shrink:0}
+.rc-name{font-family:'Bebas Neue',sans-serif;font-size:32px;line-height:1;color:#f7f7f7;flex-shrink:0;letter-spacing:14px}
 .rc-alias{font-size:9px;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin:3px 0 10px;color:#680bd6;flex-shrink:0}
 .rc-quote{font-size:9px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:#680bd6;line-height:1.4;margin:3px 0 10px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;flex-shrink:0}
 .rc-stats-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:auto}
@@ -224,7 +224,7 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
 /* ARTIST PAGE */
 .ahero{display:grid;grid-template-columns:1fr 1fr;min-height:520px;border-bottom:1px solid rgba(255,255,255,0.05)}
 .ahero-left{padding:40px 32px;display:flex;flex-direction:column;justify-content:flex-end}
-.ahero-right{position:relative;overflow:hidden;background-size:contain;background-repeat:no-repeat;background-position:center center;background-color:#0d0d0d;transition:background-image .4s ease}
+.ahero-right{position:relative;overflow:hidden;background-size:cover;background-repeat:no-repeat;background-position:center top;background-color:#0d0d0d;transition:background-image .4s ease}
 .hero-dots{display:flex;justify-content:center;gap:8px;padding:10px 0;background:#111010;border-bottom:1px solid rgba(255,255,255,0.05)}
 .hero-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.08);cursor:pointer;transition:all .3s}
 .hero-dot.active{background:#dbf343;border-color:#dbf343;box-shadow:0 0 8px rgba(219,243,67,.4)}
@@ -236,9 +236,9 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
 .ahero-arrow-right{right:14px}
 .ahero-city-tag{position:absolute;bottom:16px;left:16px;z-index:5;font-size:8px;letter-spacing:3px;text-transform:uppercase;color:rgba(247,247,247,.45);background:rgba(0,0,0,.4);padding:3px 10px;border-radius:2px}
 .a-pill{display:inline-block;font-size:8px;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:4px 12px;border-radius:2px;margin-bottom:14px;align-self:flex-start;background:#dbf343;color:#111010}
-.a-name{font-family:'Bebas Neue',sans-serif;font-size:80px;line-height:.85;letter-spacing:-1px;color:#f7f7f7;margin-bottom:10px}
+.a-name{font-family:'Bebas Neue',sans-serif;font-size:80px;line-height:.85;letter-spacing:28px;color:#f7f7f7;margin-bottom:10px}
 .a-alias{font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:700;margin-bottom:14px;color:#680bd6}
-.a-quote{font-size:13px;color:#ccc;line-height:1.65;max-width:480px;border-left:2px solid #dbf343;padding-left:14px;font-style:italic;text-align:justify}
+.a-quote{font-size:18px;color:#ccc;line-height:1.65;max-width:600px;border-left:2px solid #dbf343;padding-left:14px;font-style:italic;text-align:justify}
 .avatar-circle{width:88px;height:88px;border-radius:50%;border:2px solid #dbf343;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:32px;background:rgba(0,0,0,.5);position:relative;z-index:1;color:#dbf343}
 .avatar-city{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(247,247,247,.3);position:relative;z-index:1}
 .avatar-line{position:relative;z-index:1;height:1px;width:28px;background:#dbf343}
@@ -257,10 +257,10 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
 .stat-sub{font-size:9px;color:#ccc;margin-top:2px}
 .sec{padding:26px 32px;border-bottom:1px solid rgba(255,255,255,0.05)}
 .sec-label{font-size:8px;letter-spacing:3px;text-transform:uppercase;font-weight:800;margin-bottom:16px;color:#dbf343}
-.bio-short{font-size:15px;line-height:1.8;max-width:800px;color:#ccc;text-align:justify}
-.bio-long{font-size:12px;line-height:1.85;color:#ccc;max-width:700px;margin-top:14px;display:none;text-align:justify}
+.bio-short{font-size:16px;line-height:1.7;max-width:900px;color:#ccc;text-align:justify}
+.bio-long{font-size:15px;line-height:1.7;color:#ccc;max-width:800px;margin-top:14px;display:none;text-align:justify}
 .bio-long.open{display:block}
-.bio-long p{margin-bottom:11px;text-align:justify}
+.bio-long p{font-size:15px;margin-bottom:11px;text-align:justify}
 .read-btn{background:transparent;border:1px solid rgba(255,255,255,0.1);color:#f7f7f7;padding:6px 16px;border-radius:2px;font-size:10px;cursor:pointer;margin-top:12px;letter-spacing:1px;text-transform:uppercase;font-family:'Inter',sans-serif;transition:all .15s}
 .read-btn:hover{border-color:#680bd6;color:#680bd6}
 .pal-row{display:flex;gap:4px;margin-top:10px}
@@ -281,7 +281,7 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
 .music-cta-section{padding:28px 32px;background:linear-gradient(135deg,rgba(104,11,214,0.12) 0%,rgba(219,243,67,0.04) 100%);border-bottom:1px solid rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .music-cta-left{display:flex;align-items:center;gap:14px}
 .music-cta-icon{width:44px;height:44px;border-radius:50%;background:#dbf343;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#111010;font-size:20px}
-.music-cta-text{font-size:12px;color:#ccc;line-height:1.5}
+.music-cta-text{font-size:14px;color:#ccc;line-height:1.6}
 .music-cta-text strong{color:#dbf343;font-weight:700}
 .music-cta-btn{display:inline-flex;align-items:center;gap:8px;background:#dbf343;color:#111010;border:none;padding:12px 24px;font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border-radius:2px;font-family:'Inter',sans-serif;text-decoration:none;transition:all .2s;white-space:nowrap;flex-shrink:0}
 .music-cta-btn:hover{background:#e8f95a;transform:translateY(-2px);box-shadow:0 6px 20px rgba(219,243,67,.25)}
@@ -301,7 +301,7 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
 /* PROVIDED BY INNOVATEX */
 .provided-by{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#ccc;font-size:10px;letter-spacing:1px;font-family:'Inter',sans-serif;transition:color .25s;margin-left:auto;flex-shrink:0;margin-right:80px}
 .provided-by:hover{color:#e8f95a}
-.provided-by img{height:32px;width:auto;object-fit:contain;opacity:.5;transition:opacity .25s}
+.provided-by img{height:64px;width:auto;object-fit:contain;opacity:.5;transition:opacity .25s}
 .provided-by:hover img{opacity:1}
 .provided-by span{font-weight:600}
 .footer-left-group{display:flex;align-items:center;gap:16px;flex-wrap:wrap;flex:1}
@@ -450,8 +450,8 @@ body{background:#111010;color:#f7f7f7;font-family:'Inter',sans-serif;min-height:
   <div class="admin-footer">
     <button class="admin-select-all" id="admin-select-all">Seleccionar todos</button>
     <span class="admin-counter" id="admin-counter">0 de <strong>0</strong> seleccionados</span>
-    <button class="admin-btn-pdf" id="admin-btn-pdf" disabled>�️ Descargar PDF</button>
-    <button class="admin-btn-link" id="admin-btn-link" disabled>� Copiar Link</button>
+    <button class="admin-btn-pdf" id="admin-btn-pdf" disabled>📎 Descargar PDF</button>
+    <button class="admin-btn-link" id="admin-btn-link" disabled>🔗 Copiar Link</button>
   </div>
 </div>
 <div class="admin-toast" id="admin-toast"></div>
@@ -702,12 +702,11 @@ const ARTISTS = [
     "genre":"Popular · Regional Mexicano · Banda",
     "city":"Cali, Colombia",
     "quote":"La Patrona no pide permiso.",
-    "image":"images/wendy-01.jpg",
+    "image":"images/wendy-02.jpg",
     "banner":[
       "images/wendy-01.jpg",
       "images/wendy-02.jpg",
-      "images/wendy-03.jpg",
-      "images/wendy-04.jpg"
+      "images/wendy-03.jpg"
     ],
     "pal":["#82462A","#000000","#B07056","#A98663","#081931","#D8D3C5"],
     "artBg":"linear-gradient(155deg,#180808 0%,#240808 50%,#1a0505 100%)",
@@ -888,7 +887,7 @@ function buildSelloPage(){
       <div class="section-eyebrow">Servicios</div>
       <div class="section-title">Qué hacemos.</div>
     </div>
-    <p style="font-size:14px;color:#ccc;max-width:600px;line-height:1.85;margin-top:16px;margin-bottom:40px;text-align:justify">Todo bajo un mismo techo.</p>
+<p style="font-size:14px;color:#ccc;max-width:600px;line-height:1.85;margin-top:16px;margin-bottom:40px;text-align:justify">Todo bajo un mismo techo.</p>
     <div class="services-list">
       <div class="svc-tag">Producción musical</div>
       <div class="svc-tag">Dirección artística</div>
@@ -930,7 +929,7 @@ function buildSelloPage(){
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-left-group">
-      <img src="images/logo.jpg" alt="OKAN" style="height:40px;width:auto;object-fit:contain">
+      <img src="images/logo.jpg" alt="OKAN" style="height:300px;width:auto;object-fit:contain">
       <div>
         <div class="footer-brand">OKAN MUSIC COMPANY · Cali, Colombia</div>
         <div class="footer-tagline">Si toca el corazón, es OKAN.</div>
@@ -988,7 +987,7 @@ function buildArtistPage(a){
       <div class="link-dot"></div>
     </a>`).join('');
   const bioP=a.bioLong.map(p=>`<p>${p}</p>`).join('');
-const bgImage = a.image ? `background-image:url('${a.image}');background-size:contain;background-repeat:no-repeat;background-position:center center;` : `background:${a.artBg};`;
+const bgImage = a.image ? `background-image:url('${a.image}');background-size:cover;background-repeat:no-repeat;background-position:center top;` : `background:${a.artBg};`;
   const palHexList = a.pal.join(', ');
 
   // YouTube / Music CTA
@@ -1056,7 +1055,7 @@ const bgImage = a.image ? `background-image:url('${a.image}');background-size:co
   </div>
   <div class="a-footer">
     <div class="footer-left-group">
-      <img src="images/logo.jpg" alt="OKAN" style="height:32px;width:auto;object-fit:contain">
+      <img src="images/logo.jpg" alt="OKAN" style="height:300px;width:auto;object-fit:contain">
       <div class="a-footer-brand">OKAN MUSIC COMPANY · 2025–2026</div>
       <div class="a-footer-contact">Booking & Prensa: <span>OKAN · +57 323 4923153</span></div>
     </div>
@@ -1112,9 +1111,9 @@ function buildPressKitArtist(id){
     function setBanner(i){
       cur=i;
       rightEl.style.backgroundImage=`url('${a.banner[cur]}')`;
-      rightEl.style.backgroundSize='contain';
+      rightEl.style.backgroundSize='cover';
       rightEl.style.backgroundRepeat='no-repeat';
-      rightEl.style.backgroundPosition='center center';
+      rightEl.style.backgroundPosition='center top';
       if(dotsEl){
         dotsEl.querySelectorAll('.hero-dot').forEach((d,di)=>{ d.classList.toggle('active',di===cur); });
       }
